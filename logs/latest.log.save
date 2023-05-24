@@ -1,0 +1,731 @@
+[11May2023 01:56:57.792] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmlserver, --fml.forgeVersion, 36.2.39, --fml.mcpVersion, 20210115.111550, --fml.mcVersion, 1.16.5, --fml.forgeGroup, net.minecraftforge]
+[11May2023 01:56:57.795] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 8.1.3+8.1.3+main-8.1.x.c94d18ec starting: java version 1.8.0_362 by Private Build
+[11May2023 01:56:58.012] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
+[11May2023 01:56:58.054] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.4 Source=file:/home/shiara/forge/libraries/org/spongepowered/mixin/0.8.4/mixin-0.8.4.jar Service=ModLauncher Env=SERVER
+[11May2023 01:56:58.487] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file Mod File: /home/shiara/forge/mods/geckolib-fabric-1.16.5-3.0.107.jar is missing mods.toml file
+[11May2023 01:56:58.488] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: File /home/shiara/forge/mods/geckolib-fabric-1.16.5-3.0.107.jar has been ignored - it is invalid
+[11May2023 01:56:59.682] [main/INFO] [mixin/]: Successfully loaded Mixin Connector [vazkii.patchouli.common.MixinConnector]
+[11May2023 01:56:59.684] [main/INFO] [mixin/]: Successfully loaded Mixin Connector [com.performant.coremod.mixin.Connector]
+[11May2023 01:56:59.688] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmlserver' with arguments [--gameDir, .]
+[11May2023 01:56:59.709] [main/INFO] [Rubidium/]: Loaded configuration file for Rubidium: 29 options available, 0 override(s) found
+[11May2023 01:56:59.794] [main/INFO] [com.performant.coremod.Performant/]: Performant configs loaded
+[11May2023 01:57:00.260] [main/WARN] [mixin/]: Error loading class: top/theillusivec4/culinaryconstruct/common/item/CulinaryItemBase (java.lang.ClassNotFoundException: null)
+[11May2023 01:57:00.260] [main/WARN] [mixin/]: @Mixin target top.theillusivec4.culinaryconstruct.common.item.CulinaryItemBase was not found origins.forge.mixins.json:compat.cconstruct.CulinaryItemBaseMixin
+[11May2023 01:57:00.262] [main/WARN] [mixin/]: Error loading class: org/jwaresoftware/mcmods/vfp/common/VfpPantryItem (java.lang.ClassNotFoundException: null)
+[11May2023 01:57:00.262] [main/WARN] [mixin/]: @Mixin target org.jwaresoftware.mcmods.vfp.common.VfpPantryItem was not found origins.forge.mixins.json:compat.vfp.VfpPantryItemMixin
+[11May2023 01:57:00.835] [main/INFO] [com.performant.coremod.Performant/]: Not enabling mixin forcom.performant.coremod.mixin.forge.BasicEventHooksMixin as config disables it.
+[11May2023 01:57:00.838] [main/INFO] [com.performant.coremod.Performant/]: Not enabling mixin forcom.performant.coremod.mixin.world.WorldMixin as config disables it.
+[11May2023 01:57:00.857] [main/INFO] [com.performant.coremod.Performant/]: Not enabling mixin forcom.performant.coremod.mixin.entity.LivingEntityUpdateEventMixin as config disables it.
+[11May2023 01:57:02.590] [main/INFO] [FerriteCore - class definer/]: Using Java 8 class definer
+[11May2023 01:57:08.978] [modloading-worker-1/INFO] [ironfurnaces.IronFurnaces/]: Initializing Update Checker...
+[11May2023 01:57:08.990] [ Iron Furnaces Update Checker/INFO] [ironfurnaces.IronFurnaces/]: Starting Update Check...
+[11May2023 01:57:09.141] [modloading-worker-3/INFO] [io.github.apace100.origins.Origins/]: Origins 0.7.3.9 is initializing. Have fun!
+[11May2023 01:57:09.383] [modloading-worker-1/INFO] [com.simibubi.create.repack.registrate.AbstractRegistrate/]: Detected new forge version, registering events reflectively.
+[11May2023 01:57:09.694] [ Iron Furnaces Update Checker/INFO] [ironfurnaces.IronFurnaces/]: Update Check done!
+[11May2023 01:57:09.695] [ Iron Furnaces Update Checker/INFO] [ironfurnaces.IronFurnaces/]: Iron Furnaces is up to date!
+[11May2023 01:57:10.657] [modloading-worker-3/WARN] [mixin/]: @Final field field_187234_c:Ljava/util/Map; in performant.mixins.json:entity.EntityDataManagerMixin should be final
+[11May2023 01:57:11.399] [modloading-worker-3/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 36.2.39, for MC 1.16.5 with MCP 20210115.111550
+[11May2023 01:57:11.399] [modloading-worker-3/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v36.2.39 Initialized
+[11May2023 01:57:12.005] [modloading-worker-0/INFO] [pneumaticcraft/]: Thirdparty integration activated for [theoneprobe,immersiveengineering,waila,jei,patchouli,create]
+[11May2023 01:57:12.035] [modloading-worker-0/INFO] [com.simibubi.create.repack.registrate.AbstractRegistrate/]: Detected new forge version, registering events reflectively.
+[11May2023 01:57:12.395] [modloading-worker-1/WARN] [mixin/]: @ModifyConstant conflict. Skipping performant.mixins.json:connection.ServerPlayNetHandlerMixin->@ModifyConstant::playTimeout(J)J with priority 100, already redirected by randompatches.mixins.json:timeouts.ServerPlayNetHandlerKeepAliveMixin->@ModifyConstant::getKeepAlivePacketInterval(J)J with priority 1000
+[11May2023 01:57:12.408] [modloading-worker-3/INFO] [com.refinedmods.refinedstorage.apiimpl.API/]: Found 1 RS API injection point
+[11May2023 01:57:12.409] [modloading-worker-3/INFO] [com.refinedmods.refinedstorage.apiimpl.API/]: Injected RS API in com.refinedmods.refinedstorageaddons.RSAddons RSAPI
+[11May2023 01:57:17.879] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:block: The object Block{immersivepetroleum:distillationtower} has been registered twice for the same name immersivepetroleum:distillationtower.
+[11May2023 01:57:17.881] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:block: The object Block{immersivepetroleum:pumpjack} has been registered twice for the same name immersivepetroleum:pumpjack.
+[11May2023 01:57:17.881] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:block: The object Block{immersivepetroleum:cokerunit} has been registered twice for the same name immersivepetroleum:cokerunit.
+[11May2023 01:57:17.881] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:block: The object Block{immersivepetroleum:hydrotreater} has been registered twice for the same name immersivepetroleum:hydrotreater.
+[11May2023 01:57:18.311] [main/INFO] [patchouli/]: Loaded book jsons on Thread[main,5,main] in 144 ms
+[11May2023 01:57:19.172] [main/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `milk`, expected `forge`. This could be a intended override, but in most cases indicates a broken mod.
+[11May2023 01:57:19.173] [main/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `flowing_milk`, expected `forge`. This could be a intended override, but in most cases indicates a broken mod.
+[11May2023 01:57:19.727] [main/INFO] [immersivepetroleum/]: Loading sounds.
+[11May2023 01:57:20.203] [Thread-1/FATAL] [mcjty.theoneprobe.TheOneProbe/CORE]: theoneprobe config just got changed on the file system!
+[11May2023 01:57:20.205] [Thread-1/FATAL] [mcjty.theoneprobe.TheOneProbe/CORE]: theoneprobe config just got changed on the file system!
+[11May2023 01:57:20.572] [modloading-worker-0/INFO] [com.jaquadro.minecraft.storagedrawers.StorageDrawers/]: New compacting rule 4 clay_ball = 1 clay
+[11May2023 01:57:20.572] [modloading-worker-0/INFO] [com.jaquadro.minecraft.storagedrawers.StorageDrawers/]: New compacting rule 4 snowball = 1 snow_block
+[11May2023 01:57:20.573] [modloading-worker-0/INFO] [com.jaquadro.minecraft.storagedrawers.StorageDrawers/]: New compacting rule 4 glowstone_dust = 1 glowstone
+[11May2023 01:57:20.573] [modloading-worker-0/INFO] [com.jaquadro.minecraft.storagedrawers.StorageDrawers/]: New compacting rule 4 brick = 1 bricks
+[11May2023 01:57:20.573] [modloading-worker-0/INFO] [com.jaquadro.minecraft.storagedrawers.StorageDrawers/]: New compacting rule 4 nether_brick = 1 nether_bricks
+[11May2023 01:57:20.573] [modloading-worker-0/INFO] [com.jaquadro.minecraft.storagedrawers.StorageDrawers/]: New compacting rule 9 nether_wart = 1 nether_wart_block
+[11May2023 01:57:20.573] [modloading-worker-0/INFO] [com.jaquadro.minecraft.storagedrawers.StorageDrawers/]: New compacting rule 4 quartz = 1 quartz_block
+[11May2023 01:57:20.573] [modloading-worker-0/INFO] [com.jaquadro.minecraft.storagedrawers.StorageDrawers/]: New compacting rule 9 melon_slice = 1 melon
+[11May2023 01:57:20.573] [modloading-worker-0/INFO] [com.jaquadro.minecraft.storagedrawers.StorageDrawers/]: New compacting rule 4 sand = 1 sandstone
+[11May2023 01:57:20.573] [modloading-worker-0/INFO] [com.jaquadro.minecraft.storagedrawers.StorageDrawers/]: New compacting rule 4 red_sand = 1 red_sandstone
+[11May2023 01:57:20.574] [modloading-worker-0/INFO] [com.jaquadro.minecraft.storagedrawers.StorageDrawers/]: New compacting rule 4 clay_ball = 1 clay
+[11May2023 01:57:20.575] [modloading-worker-0/INFO] [net.minecraft.world.biome.Biome/]: Performant2 loaded, lag begone!
+[11May2023 01:57:20.578] [modloading-worker-0/INFO] [pneumaticcraft/]: PneumaticCraft: Repressurized is loading!
+[11May2023 01:57:20.706] [Immersive Engineering Contributors Thread/INFO] [immersiveengineering/]: Attempting to download special revolvers from GitHub
+[11May2023 01:57:20.911] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [easy_villagers] Starting version check at https://maxhenkel.de/update/easy_villagers.json
+[11May2023 01:57:21.132] [main/INFO] [journeymap/]: Initializing Packet Registries
+[11May2023 01:57:21.353] [modloading-worker-1/INFO] [pneumaticcraft/]: Enabled support for The One Probe
+[11May2023 01:57:21.387] [modloading-worker-2/INFO] [STDOUT/]: [com.mrh0.createaddition.CreateAddition:postInit:141]: Create Crafts & Addition Initialized!
+[11May2023 01:57:21.405] [modloading-worker-0/INFO] [Waila/]: Registered plugin at snownee.jade.JadePlugin
+[11May2023 01:57:21.406] [modloading-worker-0/INFO] [Waila/]: Registered plugin at snownee.jade.JadeClientPlugin
+[11May2023 01:57:21.421] [modloading-worker-0/INFO] [Waila/]: Registered plugin at mcp.mobius.waila.addons.minecraft.PluginMinecraft
+[11May2023 01:57:21.435] [modloading-worker-0/INFO] [Waila/]: Registered plugin at de.maxhenkel.easyvillagers.integration.waila.PluginEasyVillagers
+[11May2023 01:57:21.437] [modloading-worker-0/INFO] [Waila/]: Registered plugin at net.blay09.mods.waystones.compat.WailaProvider
+[11May2023 01:57:21.442] [modloading-worker-0/INFO] [Waila/]: Registered plugin at net.blay09.mods.cookingforblockheads.compat.WailaAddon
+[11May2023 01:57:21.473] [modloading-worker-0/INFO] [Waila/]: Registered plugin at com.jaquadro.minecraft.storagedrawers.integration.Waila
+[11May2023 01:57:21.482] [modloading-worker-0/INFO] [Waila/]: Registered plugin at me.desht.pneumaticcraft.common.thirdparty.waila.WailaRegistration
+[11May2023 01:57:21.486] [modloading-worker-0/INFO] [Waila/]: Registered plugin at blusunrize.immersiveengineering.common.util.compat.jade.IEWailaPlugin
+[11May2023 01:57:22.994] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
+java.lang.NullPointerException: null
+	at net.minecraftforge.fml.VersionChecker$1.openUrlString(VersionChecker.java:160) ~[forge:?]
+	at net.minecraftforge.fml.VersionChecker$1.process(VersionChecker.java:187) ~[forge:?]
+	at java.lang.Iterable.forEach(Iterable.java:75) [?:1.8.0_362]
+	at net.minecraftforge.fml.VersionChecker$1.run(VersionChecker.java:128) [forge:?]
+[11May2023 01:57:22.997] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [journeymap] Starting version check at https://forge.curseupdate.com/32274/journeymap
+[11May2023 01:57:23.259] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
+java.lang.NullPointerException: null
+	at net.minecraftforge.fml.VersionChecker$1.openUrlString(VersionChecker.java:160) ~[forge:?]
+	at net.minecraftforge.fml.VersionChecker$1.process(VersionChecker.java:187) ~[forge:?]
+	at java.lang.Iterable.forEach(Iterable.java:75) [?:1.8.0_362]
+	at net.minecraftforge.fml.VersionChecker$1.run(VersionChecker.java:128) [forge:?]
+[11May2023 01:57:23.259] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [configured] Starting version check at https://mrcrayfish.com/modupdatejson?id=configured
+[11May2023 01:57:23.907] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [configured] Found status: BETA Current: 1.5.4 Target: 1.5.4
+[11May2023 01:57:23.907] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [pneumaticcraft] Starting version check at https://raw.githubusercontent.com/TeamPneumatic/pnc-repressurized/1.16.5/release_info.json
+[11May2023 01:57:24.013] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [pneumaticcraft] Found status: OUTDATED Current: 1.16.5-2.15.11-334 Target: 1.16.5-2.15.12-13
+[11May2023 01:57:24.015] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [randompatches] Starting version check at https://raw.githubusercontent.com/TheRandomLabs/RandomPatches/misc/versions.json
+[11May2023 01:57:24.102] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [randompatches] Found status: UP_TO_DATE Current: 2.4.4-forge Target: null
+[11May2023 01:57:24.103] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [catalogue] Starting version check at https://mrcrayfish.com/modupdatejson?id=catalogue
+[11May2023 01:57:24.538] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [catalogue] Found status: BETA Current: 1.6.1 Target: 1.6.1
+[11May2023 01:57:24.538] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [immersiveengineering] Starting version check at https://raw.githubusercontent.com/BluSunrize/ImmersiveEngineering/1.16.5/changelog.json
+[11May2023 01:57:24.602] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [immersiveengineering] Found status: UP_TO_DATE Current: 1.16.5-5.1.0-148 Target: null
+[11May2023 01:57:24.602] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[11May2023 01:57:24.739] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: AHEAD Current: 36.2.39 Target: null
+[11May2023 01:57:24.739] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [refinedstorage] Starting version check at https://refinedmods.com/refined-storage/update.json
+[11May2023 01:57:25.039] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
+java.io.FileNotFoundException: https://refinedmods.com/refined-storage/update.json
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_362]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_362]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_362]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_362]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1952) ~[?:1.8.0_362]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1947) ~[?:1.8.0_362]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_362]
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1946) ~[?:1.8.0_362]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1516) ~[?:1.8.0_362]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1500) ~[?:1.8.0_362]
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:268) ~[?:1.8.0_362]
+	at net.minecraftforge.fml.VersionChecker$1.openUrlString(VersionChecker.java:163) ~[forge:?]
+	at net.minecraftforge.fml.VersionChecker$1.process(VersionChecker.java:187) ~[forge:?]
+	at java.lang.Iterable.forEach(Iterable.java:75) [?:1.8.0_362]
+	at net.minecraftforge.fml.VersionChecker$1.run(VersionChecker.java:128) [forge:?]
+Caused by: java.io.FileNotFoundException: https://refinedmods.com/refined-storage/update.json
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1898) ~[?:1.8.0_362]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1500) ~[?:1.8.0_362]
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480) ~[?:1.8.0_362]
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:352) ~[?:1.8.0_362]
+	at net.minecraftforge.fml.VersionChecker$1.openUrlString(VersionChecker.java:145) ~[forge:?]
+	... 3 more
+[11May2023 01:57:25.041] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [refinedstorageaddons] Starting version check at https://refinedmods.com/refined-storage-addons/update.json
+[11May2023 01:57:25.148] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
+java.io.FileNotFoundException: https://refinedmods.com/refined-storage-addons/update.json
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_362]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_362]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_362]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_362]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1952) ~[?:1.8.0_362]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1947) ~[?:1.8.0_362]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_362]
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1946) ~[?:1.8.0_362]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1516) ~[?:1.8.0_362]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1500) ~[?:1.8.0_362]
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:268) ~[?:1.8.0_362]
+	at net.minecraftforge.fml.VersionChecker$1.openUrlString(VersionChecker.java:163) ~[forge:?]
+	at net.minecraftforge.fml.VersionChecker$1.process(VersionChecker.java:187) ~[forge:?]
+	at java.lang.Iterable.forEach(Iterable.java:75) [?:1.8.0_362]
+	at net.minecraftforge.fml.VersionChecker$1.run(VersionChecker.java:128) [forge:?]
+Caused by: java.io.FileNotFoundException: https://refinedmods.com/refined-storage-addons/update.json
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1898) ~[?:1.8.0_362]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1500) ~[?:1.8.0_362]
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480) ~[?:1.8.0_362]
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:352) ~[?:1.8.0_362]
+	at net.minecraftforge.fml.VersionChecker$1.openUrlString(VersionChecker.java:145) ~[forge:?]
+	... 3 more
+[11May2023 01:57:25.150] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [zerocore] Starting version check at https://raw.githubusercontent.com/ZeroNoRyouki/ZeroCore2/master/update.json
+[11May2023 01:57:25.181] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [zerocore] Found status: OUTDATED Current: 1.16.5-2.1.30 Target: 1.16.5-2.1.34
+[11May2023 01:57:25.182] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [bigreactors] Starting version check at https://raw.githubusercontent.com/ZeroNoRyouki/ExtremeReactors2/master/update.json
+[11May2023 01:57:25.212] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
+com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Expected name at line 158 column 9 path $..1.18.2-2.0.61
+	at com.google.gson.Gson.fromJson(Gson.java:902) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:852) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:801) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:773) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at net.minecraftforge.fml.VersionChecker$1.process(VersionChecker.java:193) ~[forge:?]
+	at java.lang.Iterable.forEach(Iterable.java:75) [?:1.8.0_362]
+	at net.minecraftforge.fml.VersionChecker$1.run(VersionChecker.java:128) [forge:?]
+Caused by: com.google.gson.stream.MalformedJsonException: Expected name at line 158 column 9 path $..1.18.2-2.0.61
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1559) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:513) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.stream.JsonReader.hasNext(JsonReader.java:414) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.internal.bind.ObjectTypeAdapter.read(ObjectTypeAdapter.java:69) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.read(TypeAdapterRuntimeTypeWrapper.java:41) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:187) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:145) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	... 6 more
+[11May2023 01:57:38.192] [main/WARN] [net.minecraftforge.fml.server.ServerModLoader/LOADING]: Mods loaded with 1 warnings
+[11May2023 01:57:38.197] [main/WARN] [net.minecraftforge.fml.server.ServerModLoader/LOADING]: File geckolib-fabric-1.16.5-3.0.107.jar is a Fabric mod and cannot be loaded
+[11May2023 01:57:38.783] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[11May2023 01:57:39.262] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [amadrone_deliver, toPos] and [amadrone_deliver, player] with inputs: [0 0 0]
+[11May2023 01:57:39.266] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [c, coupling, add, cart1] and [c, coupling, add, carts] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[11May2023 01:57:39.267] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [c, coupling, add, carts] and [c, coupling, add, cart1] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[11May2023 01:57:39.268] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [c, coupling, add, cart1] and [c, coupling, add, carts] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[11May2023 01:57:39.269] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [c, coupling, add, carts] and [c, coupling, add, cart1] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[11May2023 01:57:39.277] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [sb, delete, CONFIRMATION] and [sb, delete, UUID] with inputs: ["", "quoted phrase", word]
+[11May2023 01:57:39.278] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [sb, delete, UUID] and [sb, delete, CONFIRMATION] with inputs: ["", "quoted phrase", word]
+[11May2023 01:57:39.279] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [simplybackpacks, delete, CONFIRMATION] and [simplybackpacks, delete, UUID] with inputs: ["", "quoted phrase", word]
+[11May2023 01:57:39.281] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [simplybackpacks, delete, UUID] and [simplybackpacks, delete, CONFIRMATION] with inputs: ["", "quoted phrase", word]
+[11May2023 01:57:39.284] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[11May2023 01:57:39.285] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[11May2023 01:57:39.287] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[11May2023 01:57:39.288] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[11May2023 01:57:39.289] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[11May2023 01:57:39.291] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [waypoint, create, name, dimension, location, color, announce] and [waypoint, create, name, dimension, location, color, player] with inputs: [true, false]
+[11May2023 01:57:39.293] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [waypoint, delete, name, announce] and [waypoint, delete, name, player] with inputs: [true, false]
+[11May2023 01:57:39.305] [main/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, TConstruct-1.16.5-3.3.4.335.jar, theoneprobe-1.16-3.1.4.jar, BiomesOPlenty-1.16.5-13.1.0.488-universal.jar, Jade-1.16.4-2.8.3.jar, ironfurnaces-1.16.5-2.7.7.jar, allthemodium-1.5.18-1.16.5-36.1.23.jar, refinedpipes-0.5.2.jar, jei-1.16.5-7.7.1.150.jar, simplybackpacks-1.16.5-2.1.1-build.39.jar, caelus-forge-1.16.5-2.1.3.2.jar, easy_villagers-1.16.5-1.0.13.jar, rubidium-0.2.10.jar, flywheel-1.16-0.2.5.jar, Patchouli-1.16.4-53.3.jar, Origins-1.16.5-0.7.3.9-forge.jar, Mantle-1.16.5-1.6.157.jar, create-mc1.16.5_v0.3.2g.jar, Waystones_1.16.5-7.6.4.jar, journeymap-1.16.5-5.8.5p6.jar, CookingForBlockheads_1.16.5-9.3.4.jar, StorageDrawers-1.16.3-8.5.1.jar, OreExcavation-1.8.157.jar, NaturesCompass-1.16.5-1.9.1-forge.jar, performant-1.16.2-5-3.99m.jar, configured-1.5.4-1.16.5.jar, ftb-ultimine-forge-1605.3.1-build.45.jar, pneumaticcraft-repressurized-1.16.5-2.15.11-334.jar, randompatches-2.4.4-forge.jar, architectury-1.32.66.jar, ftb-library-forge-1605.3.4-build.90.jar, ferritecore-2.1.0-forge.jar, catalogue-1.6.1-1.16.5.jar, cloth-config-4.16.91-forge.jar, JustEnoughResources-1.16.5-0.12.1.128.jar, ImmersivePetroleum-1.16.5-3.4.0-13.jar, ImmersiveEngineering-1.16.5-5.1.0-148.jar, forge-1.16.5-36.2.39-universal.jar, refinedstorage-1.9.17.jar, refinedstorageaddons-0.7.4.jar, createaddition-1.16.5-20220129a.jar, ZeroCore2-1.16.5-2.1.30.jar, ExtremeReactors2-1.16.5-2.0.60.jar
+[11May2023 01:57:40.664] [Worker-Main-6/INFO] [pneumaticcraft/]: ignoring heat properties for block byg:magmatic_stone: mod not loaded
+[11May2023 01:57:40.665] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/byg/magmatic_stone as it's serializer returned null
+[11May2023 01:57:40.666] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:reactor/reinforced/passivefluidport_mekanism as it's serializer returned null
+[11May2023 01:57:40.683] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:pneumaticcraft_fuels/hydrogen as it's serializer returned null
+[11May2023 01:57:40.709] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:reactor/reinforced/redstoneport_alt as it's serializer returned null
+[11May2023 01:57:40.713] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:reactor/reinforced/casing_upgrade_alt as it's serializer returned null
+[11May2023 01:57:40.723] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:pneumaticcraft_fuels/cofh_refined_fuel as it's serializer returned null
+[11May2023 01:57:40.735] [Worker-Main-6/INFO] [pneumaticcraft/]: ignoring heat properties for block byg:cryptic_campfire: mod not loaded
+[11May2023 01:57:40.735] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/byg/cryptic_campfire as it's serializer returned null
+[11May2023 01:57:40.738] [Worker-Main-6/INFO] [pneumaticcraft/]: ignoring heat properties for block betterendforge:ancient_emerald_ice: mod not loaded
+[11May2023 01:57:40.738] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/betterendforge/ancient_emerald_ice as it's serializer returned null
+[11May2023 01:57:40.738] [Worker-Main-6/INFO] [pneumaticcraft/]: ignoring heat properties for block byg:boric_campfire: mod not loaded
+[11May2023 01:57:40.738] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/byg/boric_campfire as it's serializer returned null
+[11May2023 01:57:40.742] [Worker-Main-6/INFO] [pneumaticcraft/]: ignoring heat properties for block occultism:spirit_fire: mod not loaded
+[11May2023 01:57:40.742] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/occultism/spirit_fire as it's serializer returned null
+[11May2023 01:57:40.742] [Worker-Main-6/INFO] [pneumaticcraft/]: ignoring heat properties for block powah:dry_ice: mod not loaded
+[11May2023 01:57:40.742] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/powah/dry_ice as it's serializer returned null
+[11May2023 01:57:40.748] [Worker-Main-6/INFO] [pneumaticcraft/]: ignoring heat properties for block betterendforge:dense_emerald_ice: mod not loaded
+[11May2023 01:57:40.748] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/betterendforge/dense_emerald_ice as it's serializer returned null
+[11May2023 01:57:40.753] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:turbine/reinforced/shaft_alt as it's serializer returned null
+[11May2023 01:57:40.758] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:turbine/reinforced/casing_alt as it's serializer returned null
+[11May2023 01:57:40.763] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:reactor/reinforced/controlrod_alt as it's serializer returned null
+[11May2023 01:57:40.768] [Worker-Main-6/INFO] [pneumaticcraft/]: ignoring heat properties for block decorative_blocks:brazier: mod not loaded
+[11May2023 01:57:40.768] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/decorative_blocks/brazier as it's serializer returned null
+[11May2023 01:57:40.771] [Worker-Main-6/INFO] [pneumaticcraft/]: ignoring heat properties for block decorative_blocks:soul_brazier: mod not loaded
+[11May2023 01:57:40.771] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/decorative_blocks/soul_brazier as it's serializer returned null
+[11May2023 01:57:40.772] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:radiation_shield_mekanism as it's serializer returned null
+[11May2023 01:57:40.775] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:pneumaticcraft_fuels/cofh_tree_oil as it's serializer returned null
+[11May2023 01:57:40.778] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:drone_interface as it's serializer returned null
+[11May2023 01:57:40.787] [Worker-Main-6/INFO] [pneumaticcraft/]: ignoring heat properties for block natura:nether_heat_sand: mod not loaded
+[11May2023 01:57:40.787] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/natura/nether_heat_sand as it's serializer returned null
+[11May2023 01:57:40.791] [Worker-Main-6/INFO] [pneumaticcraft/]: ignoring heat properties for block valhelsia_structures:brazier: mod not loaded
+[11May2023 01:57:40.792] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/valhelsia_structures/brazier as it's serializer returned null
+[11May2023 01:57:40.795] [Worker-Main-6/INFO] [pneumaticcraft/]: ignoring heat properties for block quark:brimstone: mod not loaded
+[11May2023 01:57:40.795] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/quark/brimstone as it's serializer returned null
+[11May2023 01:57:40.805] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:reactor/reinforced/fuelrod_alt_ingots_uranium as it's serializer returned null
+[11May2023 01:57:40.813] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:reactor/reinforced/computerport_alt as it's serializer returned null
+[11May2023 01:57:40.817] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:turbine/reinforced/blade_alt as it's serializer returned null
+[11May2023 01:57:40.818] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:pneumaticcraft_fuels/ethylene as it's serializer returned null
+[11May2023 01:57:40.823] [Worker-Main-6/INFO] [pneumaticcraft/]: ignoring heat properties for block mekanism:block_uranium: mod not loaded
+[11May2023 01:57:40.824] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/mekanism/uranium as it's serializer returned null
+[11May2023 01:57:40.825] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:turbine/reinforced/bearing_alt as it's serializer returned null
+[11May2023 01:57:40.826] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:turbine/reinforced/redstoneport_alt as it's serializer returned null
+[11May2023 01:57:40.828] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:pneumaticcraft_fuels/cofh_creosote as it's serializer returned null
+[11May2023 01:57:40.836] [Worker-Main-6/INFO] [pneumaticcraft/]: ignoring heat properties for block betterendforge:emerald_ice: mod not loaded
+[11May2023 01:57:40.836] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/betterendforge/emerald_ice as it's serializer returned null
+[11May2023 01:57:40.847] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:reactor/reinforced/fluidaccessport_alt as it's serializer returned null
+[11May2023 01:57:40.848] [Worker-Main-6/INFO] [pneumaticcraft/]: ignoring heat properties for block byg:cryptic_magma_block: mod not loaded
+[11May2023 01:57:40.848] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/byg/cryptic_magma as it's serializer returned null
+[11May2023 01:57:40.849] [Worker-Main-6/INFO] [pneumaticcraft/]: ignoring heat properties for block botania:blaze_block: mod not loaded
+[11May2023 01:57:40.849] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/botania/blaze_block as it's serializer returned null
+[11May2023 01:57:40.849] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:reactor/reinforced/fuelrod_alt_ingots_yellorium as it's serializer returned null
+[11May2023 01:57:40.856] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:turbine/reinforced/casing_upgrade_alt as it's serializer returned null
+[11May2023 01:57:40.860] [Worker-Main-6/INFO] [pneumaticcraft/]: ignoring heat properties for block quark:permafrost: mod not loaded
+[11May2023 01:57:40.860] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/quark/permafrost as it's serializer returned null
+[11May2023 01:57:40.860] [Worker-Main-6/INFO] [pneumaticcraft/]: ignoring heat properties for block quark:blaze_lantern: mod not loaded
+[11May2023 01:57:40.860] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/quark/blaze_lantern as it's serializer returned null
+[11May2023 01:57:40.861] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:turbine/reinforced/computerport_alt as it's serializer returned null
+[11May2023 01:57:40.864] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:reactor/reinforced/casing_alt as it's serializer returned null
+[11May2023 01:57:40.868] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:reactor/reinforced/solidaccessport_alt as it's serializer returned null
+[11May2023 01:57:40.870] [Worker-Main-6/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 69 recipes
+[11May2023 01:57:41.119] [Worker-Main-6/ERROR] [net.minecraft.loot.LootTableManager/]: Couldn't parse loot table iceandfire:blocks/unobtainium_pile
+java.lang.IllegalArgumentException: Can't find block iceandfire:unobtainium_pile
+	at net.minecraft.loot.conditions.BlockStateProperty$Serializer.func_227569_a_(SourceFile:79) ~[?:?]
+	at java.util.Optional.orElseThrow(Optional.java:290) ~[?:1.8.0_362]
+	at net.minecraft.loot.conditions.BlockStateProperty$Serializer.func_230423_a_(SourceFile:79) ~[?:?]
+	at net.minecraft.loot.conditions.BlockStateProperty$Serializer.func_230423_a_(SourceFile:68) ~[?:?]
+	at net.minecraft.loot.LootTypesManager$Serializer.deserialize(SourceFile:83) ~[?:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.read(TypeAdapterRuntimeTypeWrapper.java:41) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.internal.bind.ArrayTypeAdapter.read(ArrayTypeAdapter.java:72) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:952) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:162) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at net.minecraft.util.JSONUtils.func_188179_a(SourceFile:440) ~[?:?]
+	at net.minecraft.util.JSONUtils.func_188177_a(SourceFile:456) ~[?:?]
+	at net.minecraft.loot.LootEntry$Serializer.func_230423_a_(SourceFile:85) ~[?:?]
+	at net.minecraft.loot.LootEntry$Serializer.func_230423_a_(SourceFile:74) ~[?:?]
+	at net.minecraft.loot.LootTypesManager$Serializer.deserialize(SourceFile:83) ~[?:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.read(TypeAdapterRuntimeTypeWrapper.java:41) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.internal.bind.ArrayTypeAdapter.read(ArrayTypeAdapter.java:72) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:952) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:162) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at net.minecraft.util.JSONUtils.func_188179_a(SourceFile:440) ~[?:?]
+	at net.minecraft.util.JSONUtils.func_188174_a(SourceFile:448) ~[?:?]
+	at net.minecraft.loot.LootPool$Serializer.deserialize(LootPool.java:183) ~[?:?]
+	at net.minecraft.loot.LootPool$Serializer.deserialize(LootPool.java:180) ~[?:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.read(TypeAdapterRuntimeTypeWrapper.java:41) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.internal.bind.ArrayTypeAdapter.read(ArrayTypeAdapter.java:72) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:952) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:162) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at net.minecraft.util.JSONUtils.func_188179_a(SourceFile:440) ~[?:?]
+	at net.minecraft.util.JSONUtils.func_188177_a(SourceFile:456) ~[?:?]
+	at net.minecraft.loot.LootTable$Serializer.deserialize(LootTable.java:252) ~[?:?]
+	at net.minecraft.loot.LootTable$Serializer.deserialize(LootTable.java:249) ~[?:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:952) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:925) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at net.minecraftforge.common.ForgeHooks.loadLootTable(ForgeHooks.java:874) ~[forge:?]
+	at net.minecraft.loot.LootTableManager.lambda$apply$0(LootTableManager.java:40) ~[?:?]
+	at java.util.HashMap.forEach(HashMap.java:1290) ~[?:1.8.0_362]
+	at net.minecraft.loot.LootTableManager.func_212853_a_(LootTableManager.java:38) ~[?:?]
+	at net.minecraft.loot.LootTableManager.func_212853_a_(LootTableManager.java:16) ~[?:?]
+	at net.minecraft.client.resources.ReloadListener.func_215269_a(SourceFile:13) ~[?:?]
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:670) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:456) ~[?:1.8.0_362]
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?]
+	at net.minecraft.resources.AsyncReloader.func_219560_a(SourceFile:70) ~[?:?]
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:543) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:667) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:575) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:649) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:456) ~[?:1.8.0_362]
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?]
+	at net.minecraft.resources.AsyncReloader.func_219560_a(SourceFile:70) ~[?:?]
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:543) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:667) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:575) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:649) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:456) ~[?:1.8.0_362]
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?]
+	at net.minecraft.resources.AsyncReloader.func_219560_a(SourceFile:70) ~[?:?]
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:543) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:667) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:575) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:649) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:456) ~[?:1.8.0_362]
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?]
+	at net.minecraft.resources.AsyncReloader.func_219560_a(SourceFile:70) ~[?:?]
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:543) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:667) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:1975) ~[?:1.8.0_362]
+	at net.minecraft.resources.AsyncReloader$1.func_216873_a(SourceFile:53) ~[?:?]
+	at net.minecraft.resources.AsyncReloader$1.func_216872_a(SourceFile:50) ~[?:?]
+	at java.util.concurrent.CompletableFuture.uniCompose(CompletableFuture.java:966) [?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:940) [?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488) [?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1609) [?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1596) [?:1.8.0_362]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) [?:1.8.0_362]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056) [?:1.8.0_362]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692) [?:1.8.0_362]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175) [?:1.8.0_362]
+[11May2023 01:57:41.675] [Worker-Main-6/ERROR] [net.minecraft.loot.LootTableManager/]: Couldn't parse loot table iceandfire:blocks/vibranium_pile
+java.lang.IllegalArgumentException: Can't find block iceandfire:vibranium_pile
+	at net.minecraft.loot.conditions.BlockStateProperty$Serializer.func_227569_a_(SourceFile:79) ~[?:?]
+	at java.util.Optional.orElseThrow(Optional.java:290) ~[?:1.8.0_362]
+	at net.minecraft.loot.conditions.BlockStateProperty$Serializer.func_230423_a_(SourceFile:79) ~[?:?]
+	at net.minecraft.loot.conditions.BlockStateProperty$Serializer.func_230423_a_(SourceFile:68) ~[?:?]
+	at net.minecraft.loot.LootTypesManager$Serializer.deserialize(SourceFile:83) ~[?:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.read(TypeAdapterRuntimeTypeWrapper.java:41) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.internal.bind.ArrayTypeAdapter.read(ArrayTypeAdapter.java:72) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:952) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:162) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at net.minecraft.util.JSONUtils.func_188179_a(SourceFile:440) ~[?:?]
+	at net.minecraft.util.JSONUtils.func_188177_a(SourceFile:456) ~[?:?]
+	at net.minecraft.loot.LootEntry$Serializer.func_230423_a_(SourceFile:85) ~[?:?]
+	at net.minecraft.loot.LootEntry$Serializer.func_230423_a_(SourceFile:74) ~[?:?]
+	at net.minecraft.loot.LootTypesManager$Serializer.deserialize(SourceFile:83) ~[?:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.read(TypeAdapterRuntimeTypeWrapper.java:41) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.internal.bind.ArrayTypeAdapter.read(ArrayTypeAdapter.java:72) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:952) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:162) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at net.minecraft.util.JSONUtils.func_188179_a(SourceFile:440) ~[?:?]
+	at net.minecraft.util.JSONUtils.func_188174_a(SourceFile:448) ~[?:?]
+	at net.minecraft.loot.LootPool$Serializer.deserialize(LootPool.java:183) ~[?:?]
+	at net.minecraft.loot.LootPool$Serializer.deserialize(LootPool.java:180) ~[?:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.read(TypeAdapterRuntimeTypeWrapper.java:41) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.internal.bind.ArrayTypeAdapter.read(ArrayTypeAdapter.java:72) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:952) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:162) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at net.minecraft.util.JSONUtils.func_188179_a(SourceFile:440) ~[?:?]
+	at net.minecraft.util.JSONUtils.func_188177_a(SourceFile:456) ~[?:?]
+	at net.minecraft.loot.LootTable$Serializer.deserialize(LootTable.java:252) ~[?:?]
+	at net.minecraft.loot.LootTable$Serializer.deserialize(LootTable.java:249) ~[?:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:952) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:925) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at net.minecraftforge.common.ForgeHooks.loadLootTable(ForgeHooks.java:874) ~[forge:?]
+	at net.minecraft.loot.LootTableManager.lambda$apply$0(LootTableManager.java:40) ~[?:?]
+	at java.util.HashMap.forEach(HashMap.java:1290) ~[?:1.8.0_362]
+	at net.minecraft.loot.LootTableManager.func_212853_a_(LootTableManager.java:38) ~[?:?]
+	at net.minecraft.loot.LootTableManager.func_212853_a_(LootTableManager.java:16) ~[?:?]
+	at net.minecraft.client.resources.ReloadListener.func_215269_a(SourceFile:13) ~[?:?]
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:670) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:456) ~[?:1.8.0_362]
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?]
+	at net.minecraft.resources.AsyncReloader.func_219560_a(SourceFile:70) ~[?:?]
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:543) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:667) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:575) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:649) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:456) ~[?:1.8.0_362]
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?]
+	at net.minecraft.resources.AsyncReloader.func_219560_a(SourceFile:70) ~[?:?]
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:543) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:667) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:575) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:649) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:456) ~[?:1.8.0_362]
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?]
+	at net.minecraft.resources.AsyncReloader.func_219560_a(SourceFile:70) ~[?:?]
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:543) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:667) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:575) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:649) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:456) ~[?:1.8.0_362]
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?]
+	at net.minecraft.resources.AsyncReloader.func_219560_a(SourceFile:70) ~[?:?]
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:543) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:667) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:1975) ~[?:1.8.0_362]
+	at net.minecraft.resources.AsyncReloader$1.func_216873_a(SourceFile:53) ~[?:?]
+	at net.minecraft.resources.AsyncReloader$1.func_216872_a(SourceFile:50) ~[?:?]
+	at java.util.concurrent.CompletableFuture.uniCompose(CompletableFuture.java:966) [?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:940) [?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488) [?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1609) [?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1596) [?:1.8.0_362]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) [?:1.8.0_362]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056) [?:1.8.0_362]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692) [?:1.8.0_362]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175) [?:1.8.0_362]
+[11May2023 01:57:41.707] [Worker-Main-6/ERROR] [net.minecraft.loot.LootTableManager/]: Couldn't parse loot table iceandfire:blocks/allthemodium_pile
+java.lang.IllegalArgumentException: Can't find block iceandfire:allthemodium_pile
+	at net.minecraft.loot.conditions.BlockStateProperty$Serializer.func_227569_a_(SourceFile:79) ~[?:?]
+	at java.util.Optional.orElseThrow(Optional.java:290) ~[?:1.8.0_362]
+	at net.minecraft.loot.conditions.BlockStateProperty$Serializer.func_230423_a_(SourceFile:79) ~[?:?]
+	at net.minecraft.loot.conditions.BlockStateProperty$Serializer.func_230423_a_(SourceFile:68) ~[?:?]
+	at net.minecraft.loot.LootTypesManager$Serializer.deserialize(SourceFile:83) ~[?:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.read(TypeAdapterRuntimeTypeWrapper.java:41) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.internal.bind.ArrayTypeAdapter.read(ArrayTypeAdapter.java:72) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:952) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:162) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at net.minecraft.util.JSONUtils.func_188179_a(SourceFile:440) ~[?:?]
+	at net.minecraft.util.JSONUtils.func_188177_a(SourceFile:456) ~[?:?]
+	at net.minecraft.loot.LootEntry$Serializer.func_230423_a_(SourceFile:85) ~[?:?]
+	at net.minecraft.loot.LootEntry$Serializer.func_230423_a_(SourceFile:74) ~[?:?]
+	at net.minecraft.loot.LootTypesManager$Serializer.deserialize(SourceFile:83) ~[?:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.read(TypeAdapterRuntimeTypeWrapper.java:41) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.internal.bind.ArrayTypeAdapter.read(ArrayTypeAdapter.java:72) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:952) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:162) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at net.minecraft.util.JSONUtils.func_188179_a(SourceFile:440) ~[?:?]
+	at net.minecraft.util.JSONUtils.func_188174_a(SourceFile:448) ~[?:?]
+	at net.minecraft.loot.LootPool$Serializer.deserialize(LootPool.java:183) ~[?:?]
+	at net.minecraft.loot.LootPool$Serializer.deserialize(LootPool.java:180) ~[?:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.read(TypeAdapterRuntimeTypeWrapper.java:41) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.internal.bind.ArrayTypeAdapter.read(ArrayTypeAdapter.java:72) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:952) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:162) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at net.minecraft.util.JSONUtils.func_188179_a(SourceFile:440) ~[?:?]
+	at net.minecraft.util.JSONUtils.func_188177_a(SourceFile:456) ~[?:?]
+	at net.minecraft.loot.LootTable$Serializer.deserialize(LootTable.java:252) ~[?:?]
+	at net.minecraft.loot.LootTable$Serializer.deserialize(LootTable.java:249) ~[?:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:952) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:925) ~[server-1.16.5-20210115.111550-extra.jar:?]
+	at net.minecraftforge.common.ForgeHooks.loadLootTable(ForgeHooks.java:874) ~[forge:?]
+	at net.minecraft.loot.LootTableManager.lambda$apply$0(LootTableManager.java:40) ~[?:?]
+	at java.util.HashMap.forEach(HashMap.java:1290) ~[?:1.8.0_362]
+	at net.minecraft.loot.LootTableManager.func_212853_a_(LootTableManager.java:38) ~[?:?]
+	at net.minecraft.loot.LootTableManager.func_212853_a_(LootTableManager.java:16) ~[?:?]
+	at net.minecraft.client.resources.ReloadListener.func_215269_a(SourceFile:13) ~[?:?]
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:670) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:456) ~[?:1.8.0_362]
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?]
+	at net.minecraft.resources.AsyncReloader.func_219560_a(SourceFile:70) ~[?:?]
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:543) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:667) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:575) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:649) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:456) ~[?:1.8.0_362]
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?]
+	at net.minecraft.resources.AsyncReloader.func_219560_a(SourceFile:70) ~[?:?]
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:543) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:667) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:575) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:649) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:456) ~[?:1.8.0_362]
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?]
+	at net.minecraft.resources.AsyncReloader.func_219560_a(SourceFile:70) ~[?:?]
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:543) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:667) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:575) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:649) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:456) ~[?:1.8.0_362]
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?]
+	at net.minecraft.resources.AsyncReloader.func_219560_a(SourceFile:70) ~[?:?]
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:543) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:667) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488) ~[?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:1975) ~[?:1.8.0_362]
+	at net.minecraft.resources.AsyncReloader$1.func_216873_a(SourceFile:53) ~[?:?]
+	at net.minecraft.resources.AsyncReloader$1.func_216872_a(SourceFile:50) ~[?:?]
+	at java.util.concurrent.CompletableFuture.uniCompose(CompletableFuture.java:966) [?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:940) [?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488) [?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1609) [?:1.8.0_362]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1596) [?:1.8.0_362]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) [?:1.8.0_362]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056) [?:1.8.0_362]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692) [?:1.8.0_362]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175) [?:1.8.0_362]
+[11May2023 01:57:41.750] [Worker-Main-6/ERROR] [net.minecraft.advancements.AdvancementManager/]: Parsing error loading custom advancement allthemodium:atmsight: Unknown potion 'potionsmaster:allthemodium_sight'
+[11May2023 01:57:41.890] [Worker-Main-6/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 3595 advancements
+[11May2023 01:57:41.930] [Worker-Main-6/INFO] [io.github.apace100.origins.Origins/]: Finished loading powers from data files. Registry contains 68 powers.
+[11May2023 01:57:41.934] [Worker-Main-6/INFO] [io.github.apace100.origins.Origins/]: Finished loading origins from data files. Registry contains 11 origins.
+[11May2023 01:57:41.935] [Worker-Main-6/INFO] [io.github.apace100.origins.Origins/]: Trying to read layer file: origins:origin
+[11May2023 01:57:41.938] [Worker-Main-6/INFO] [io.github.apace100.origins.Origins/]: Finished loading origin layers from data files. Read 1 layers.
+[11May2023 01:57:41.940] [Worker-Main-6/INFO] [immersivepetroleum/]: Loading Distillation Recipes.
+[11May2023 01:57:41.942] [Worker-Main-6/INFO] [immersivepetroleum/]: Loading Reservoirs.
+[11May2023 01:57:41.943] [Worker-Main-6/INFO] [immersivepetroleum/]: Loading Coker-Unit Recipes.
+[11May2023 01:57:41.944] [Worker-Main-6/INFO] [immersivepetroleum/]: Loading Sulfur Recovery Recipes.
+[11May2023 01:57:42.041] [Worker-Main-6/INFO] [immersiveengineering/]: Couldn't fully analyze 1 compressed_iron_leggings, missing knowledge for {1 leather_leggings=1.0}
+[11May2023 01:57:42.041] [Worker-Main-6/INFO] [immersiveengineering/]: Couldn't fully analyze 1 compressed_iron_helmet, missing knowledge for {1 leather_helmet=1.0}
+[11May2023 01:57:42.041] [Worker-Main-6/INFO] [immersiveengineering/]: Couldn't fully analyze 1 compressed_iron_chestplate, missing knowledge for {1 leather_chestplate=1.0}
+[11May2023 01:57:42.041] [Worker-Main-6/INFO] [immersiveengineering/]: Couldn't fully analyze 1 compressed_iron_boots, missing knowledge for {1 leather_boots=1.0}
+[11May2023 01:57:42.041] [Worker-Main-6/INFO] [immersiveengineering/]: Couldn't fully analyze 1 pneumatic_leggings, missing knowledge for {1 compressed_iron_leggings=1.0}
+[11May2023 01:57:42.042] [Worker-Main-6/INFO] [immersiveengineering/]: Finished recipe profiler for Arc Recycling, took 96 milliseconds
+[11May2023 01:57:42.111] [Worker-Main-6/INFO] [slimeknights.tconstruct.library.materials.definition.MaterialManager/]: Loaded 64 materials in 6.520013 ms
+[11May2023 01:57:42.145] [Worker-Main-6/INFO] [slimeknights.tconstruct.library.materials.stats.MaterialStatsManager/]: 137 stats loaded for 70 materials in 33.318523 ms
+[11May2023 01:57:42.178] [Worker-Main-6/INFO] [slimeknights.tconstruct.library.materials.traits.MaterialTraitsManager/]: 59 traits loaded for 70 materials in 32.663883 ms
+[11May2023 01:57:42.198] [Worker-Main-6/INFO] [slimeknights.tconstruct.library.tools.layout.StationSlotLayoutLoader/]: Loaded 15 station slot layouts in 16.68804 ms
+[11May2023 01:57:42.236] [Worker-Main-6/INFO] [immersiveengineering/]: Recipes for potions: minecraft:poison, minecraft:long_slowness, minecraft:swiftness, minecraft:harming, minecraft:awkward, minecraft:strong_regeneration, minecraft:long_strength, minecraft:long_poison, minecraft:strength, minecraft:strong_slowness, minecraft:invisibility, minecraft:long_leaping, minecraft:fire_resistance, minecraft:long_swiftness, minecraft:water, minecraft:regeneration, minecraft:long_fire_resistance, minecraft:leaping, minecraft:long_night_vision, minecraft:long_regeneration, minecraft:strong_healing, minecraft:weakness, minecraft:thick, minecraft:strong_strength, minecraft:slowness, minecraft:strong_leaping, minecraft:strong_swiftness, minecraft:night_vision, minecraft:strong_harming, minecraft:strong_turtle_master, minecraft:long_weakness, minecraft:long_slow_falling, minecraft:turtle_master, minecraft:strong_poison, minecraft:slow_falling, minecraft:water_breathing, minecraft:healing, minecraft:mundane, minecraft:long_turtle_master, minecraft:long_water_breathing, minecraft:long_invisibility
+[11May2023 01:57:51.321] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting minecraft server version 1.16.5
+[11May2023 01:57:51.323] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Loading properties
+[11May2023 01:57:51.323] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Default game type: SURVIVAL
+[11May2023 01:57:51.323] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[11May2023 01:57:51.431] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting Minecraft server on *:25565
+[11May2023 01:57:51.451] [Server thread/INFO] [net.minecraft.network.NetworkSystem/]: Using epoll channel type
+[11May2023 01:57:51.570] [Server thread/INFO] [journeymap/]: Loading JourneyMap Forge Configs
+[11May2023 01:57:51.570] [Thread-1/INFO] [journeymap/]: Loading JourneyMap Forge Configs
+[11May2023 01:57:51.571] [Thread-1/INFO] [journeymap/]: Loading JourneyMap Forge Configs
+[11May2023 01:57:51.573] [Server thread/INFO] [immersivepetroleum/FuelHandler/]: Added immersivepetroleum:gasoline as Portable Generator Fuel. (256RF/t 5mB/t)
+[11May2023 01:57:51.573] [Server thread/INFO] [immersivepetroleum/FuelHandler/]: Added immersivepetroleum:gasoline as Motorboat Fuel. (1 mB/t)
+[11May2023 01:57:51.573] [Thread-1/INFO] [immersivepetroleum/FuelHandler/]: Added immersivepetroleum:gasoline as Portable Generator Fuel. (256RF/t 5mB/t)
+[11May2023 01:57:51.574] [Thread-1/INFO] [immersivepetroleum/FuelHandler/]: Added immersivepetroleum:gasoline as Motorboat Fuel. (1 mB/t)
+[11May2023 01:57:51.574] [Thread-1/INFO] [immersivepetroleum/FuelHandler/]: Added immersivepetroleum:gasoline as Portable Generator Fuel. (256RF/t 5mB/t)
+[11May2023 01:57:51.574] [Thread-1/INFO] [immersivepetroleum/FuelHandler/]: Added immersivepetroleum:gasoline as Motorboat Fuel. (1 mB/t)
+[11May2023 01:57:51.613] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Preparing level "world"
+[11May2023 01:57:51.755] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[11May2023 01:57:52.320] [Server thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[11May2023 01:57:52.328] [Server thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[11May2023 01:57:52.755] [Server thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 13%
+[11May2023 01:57:52.926] [Server thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Time elapsed: 1171 ms
+[11May2023 01:57:52.927] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Done (1.371s)! For help, type "help"
+[11May2023 02:00:57.249] [User Authenticator #1/INFO] [net.minecraft.network.login.ServerLoginNetHandler/]: UUID of player mablelaylee is c744c198-7f17-4856-b9ed-b5b3456f973d
+[11May2023 02:01:01.128] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@67415230
+[11May2023 02:01:01.170] [Server thread/INFO] [net.minecraft.server.management.PlayerList/]: mablelaylee[/47.55.86.141:51228] logged in with entity id 111 at (769.6999999880791, 58.97410702230169, 1961.515051736292)
+[11May2023 02:01:01.202] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: mablelaylee joined the game
+[11May2023 02:01:01.292] [Server thread/INFO] [Waila/]: Syncing config to mablelaylee (c744c198-7f17-4856-b9ed-b5b3456f973d)
+[11May2023 02:04:09.362] [Server thread/WARN] [net.minecraft.server.management.PlayerInteractionManager/]: Mismatch in destroy block pos: BlockPos{x=781, y=54, z=1970} BlockPos{x=781, y=53, z=1970}
+[11May2023 02:07:22.109] [Server thread/WARN] [net.minecraft.server.management.PlayerInteractionManager/]: Mismatch in destroy block pos: BlockPos{x=721, y=47, z=1975} BlockPos{x=720, y=48, z=1973}
+[11May2023 02:08:56.699] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Incorrect argument for command
+[11May2023 02:08:56.700] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /execute mablelaylee ~ ~ ~ setworldspawn<--[HERE]
+[11May2023 02:09:05.383] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /advancement (grant|revoke)
+[11May2023 02:09:05.384] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /amadrone_deliver (<player>|<toPos>)
+[11May2023 02:09:05.384] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /attribute <target> <attribute> (base|get|modifier)
+[11May2023 02:09:05.384] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /ban <targets> [<reason>]
+[11May2023 02:09:05.384] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /ban-ip <target> [<reason>]
+[11May2023 02:09:05.384] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /banlist [ips|players]
+[11May2023 02:09:05.384] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /bossbar (add|get|list|remove|set)
+[11May2023 02:09:05.384] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /c (clone|config|coupling|fixLighting|glue|highlight|overlay|ponder|rainbowDebug|u|util)
+[11May2023 02:09:05.384] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /cca_api
+[11May2023 02:09:05.385] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /clear [<targets>]
+[11May2023 02:09:05.385] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /clone <begin> <end> <destination> [filtered|masked|replace]
+[11May2023 02:09:05.385] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /config showfile <mod> <type>
+[11May2023 02:09:05.385] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /create (clone|config|coupling|fixLighting|glue|highlight|overlay|ponder|rainbowDebug|u|util)
+[11May2023 02:09:05.385] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /data (get|merge|modify|remove)
+[11May2023 02:09:05.385] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /datapack (disable|enable|list)
+[11May2023 02:09:05.385] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /debug (report|start|stop)
+[11May2023 02:09:05.385] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /defaultgamemode (adventure|creative|spectator|survival)
+[11May2023 02:09:05.385] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /deop <targets>
+[11May2023 02:09:05.386] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /difficulty [easy|hard|normal|peaceful]
+[11May2023 02:09:05.386] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /dumpHandlers
+[11May2023 02:09:05.386] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /dumpNBT
+[11May2023 02:09:05.386] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /effect (clear|give)
+[11May2023 02:09:05.386] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /enchant <targets> <enchantment> [<level>]
+[11May2023 02:09:05.386] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /er (coils|reactants|reaction)
+[11May2023 02:09:05.386] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /execute (align|anchored|as|at|facing|if|in|positioned|rotated|run|store|unless)
+[11May2023 02:09:05.386] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /experience (add|query|set)
+[11May2023 02:09:05.387] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /fill <from> <to> <block> [destroy|hollow|keep|outline|replace]
+[11May2023 02:09:05.387] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /flywheel (backend|debugNormals)
+[11May2023 02:09:05.387] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /forceload (add|query|remove)
+[11May2023 02:09:05.387] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /forge (dimensions|entity|generate|mods|setdimension|tps|track)
+[11May2023 02:09:05.387] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /ftblibrary (day|gamemode|nbtedit|night|rain)
+[11May2023 02:09:05.387] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /function <name>
+[11May2023 02:09:05.387] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /gamemode (adventure|creative|spectator|survival)
+[11May2023 02:09:05.387] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /gamerule (announceAdvancements|commandBlockOutput|disableElytraMovementCheck|disableRaids|doDaylightCycle|doEntityDrops|doFireTick|doImmediateRespawn|doInsomnia|doLimitedCrafting|doMobLoot|doMobSpawning|doPatrolSpawning|doTileDrops|doTraderSpawning|doWeatherCycle|drowningDamage|fallDamage|fireDamage|forgiveDeadPlayers|keepInventory|logAdminCommands|maxCommandChainLength|maxEntityCramming|mobGriefing|naturalRegeneration|randomTickSpeed|reducedDebugInfo|sendCommandFeedback|showDeathMessages|spawnRadius|spectatorsGenerateChunks|universalAnger)
+[11May2023 02:09:05.387] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /get_global_var <varname>
+[11May2023 02:09:05.388] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /give <targets> <item> [<count>]
+[11May2023 02:09:05.388] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /help [<command>]
+[11May2023 02:09:05.388] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /ie (clearshaders|mineral|resetmanual|resetrender)
+[11May2023 02:09:05.388] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /ip reservoir [get|set|setAmount|setCapacity]
+[11May2023 02:09:05.388] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /kick <targets> [<reason>]
+[11May2023 02:09:05.388] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /kill [<targets>]
+[11May2023 02:09:05.388] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /list [uuids]
+[11May2023 02:09:05.388] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /locate (bastion_remnant|buried_treasure|desert_pyramid|endcity|fortress|igloo|jungle_pyramid|mansion|mineshaft|monument|nether_fossil|ocean_ruin|pillager_outpost|ruined_portal|shipwreck|stronghold|swamp_hut|tconstruct:clay_island|tconstruct:earth_slime_island|tconstruct:end_slime_island|tconstruct:nether_slime_island|tconstruct:overworld_slime_island|village)
+[11May2023 02:09:05.388] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /locatebiome <biome>
+[11May2023 02:09:05.389] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /loot (give|insert|replace|spawn)
+[11May2023 02:09:05.389] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /mantle (dump_all_tags|dump_loot_modifiers|dump_tag|tags_for|view_tag)
+[11May2023 02:09:05.389] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /me <action>
+[11May2023 02:09:05.389] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /msg <targets> <message>
+[11May2023 02:09:05.389] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /op <targets>
+[11May2023 02:09:05.389] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /open-patchouli-book <targets> <book> [<entry>]
+[11May2023 02:09:05.389] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /origin (get|has|set)
+[11May2023 02:09:05.389] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /pardon <targets>
+[11May2023 02:09:05.389] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /pardon-ip <target>
+[11May2023 02:09:05.390] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /particle <name> [<pos>]
+[11May2023 02:09:05.390] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /performant (collidenearby|disableLoadBalancing|enableLoadBalancing|recordMessages|reportEntities|reportEvents|reportMessages|reportTileEntities|startGatherData|whatsnearby)
+[11May2023 02:09:05.390] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /playsound <sound> (ambient|block|hostile|master|music|neutral|player|record|voice|weather)
+[11May2023 02:09:05.390] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /recipe (give|take)
+[11May2023 02:09:05.390] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /refinedstorage (disk|network|pattern)
+[11May2023 02:09:05.390] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /reload
+[11May2023 02:09:05.390] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /replaceitem (block|entity)
+[11May2023 02:09:05.390] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /resource (change|get|has|operation|set)
+[11May2023 02:09:05.390] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /rpconfigreload
+[11May2023 02:09:05.390] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /save-all [flush]
+[11May2023 02:09:05.391] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /save-off
+[11May2023 02:09:05.391] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /save-on
+[11May2023 02:09:05.391] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /say <message>
+[11May2023 02:09:05.391] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /sb (delete|list|open|recover)
+[11May2023 02:09:05.391] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /schedule (clear|function)
+[11May2023 02:09:05.391] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /scoreboard (objectives|players)
+[11May2023 02:09:05.391] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /seed
+[11May2023 02:09:05.391] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /set_global_var <varname> <pos>
+[11May2023 02:09:05.391] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /setblock <pos> <block> [destroy|keep|replace]
+[11May2023 02:09:05.392] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /setidletimeout <minutes>
+[11May2023 02:09:05.392] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /setworldspawn [<pos>]
+[11May2023 02:09:05.392] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /simplybackpacks (delete|list|open|recover)
+[11May2023 02:09:05.392] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /spawnpoint [<targets>]
+[11May2023 02:09:05.392] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /spectate [<target>]
+[11May2023 02:09:05.392] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /spreadplayers <center> <spreadDistance> <maxRange> (under|<respectTeams>)
+[11May2023 02:09:05.392] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /stop
+[11May2023 02:09:05.392] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /stopsound <targets> [*|ambient|block|hostile|master|music|neutral|player|record|voice|weather]
+[11May2023 02:09:05.392] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /summon <entity> [<pos>]
+[11May2023 02:09:05.393] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /tag <targets> (add|list|remove)
+[11May2023 02:09:05.393] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /tconstruct (modifier_usage|modifiers|slots|tool_stats)
+[11May2023 02:09:05.393] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /team (add|empty|join|leave|list|modify|remove)
+[11May2023 02:09:05.393] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /teammsg <message>
+[11May2023 02:09:05.393] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /teleport (<destination>|<location>|<targets>)
+[11May2023 02:09:05.393] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /tell -> msg
+[11May2023 02:09:05.393] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /tellraw <targets> <message>
+[11May2023 02:09:05.393] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /theoneprobe (config|need)
+[11May2023 02:09:05.394] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /time (add|query|set)
+[11May2023 02:09:05.394] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /title <targets> (actionbar|clear|reset|subtitle|times|title)
+[11May2023 02:09:05.394] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /tm -> teammsg
+[11May2023 02:09:05.394] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /top -> theoneprobe
+[11May2023 02:09:05.394] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /tp -> teleport
+[11May2023 02:09:05.394] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /trigger <objective> [add|set]
+[11May2023 02:09:05.394] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /undo_excavation
+[11May2023 02:09:05.394] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /w -> msg
+[11May2023 02:09:05.395] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /waypoint (create|delete)
+[11May2023 02:09:05.395] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /weather (clear|rain|thunder)
+[11May2023 02:09:05.395] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /whitelist (add|list|off|on|reload|remove)
+[11May2023 02:09:05.395] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /worldborder (add|center|damage|get|set|warning)
+[11May2023 02:09:05.395] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /wp -> waypoint
+[11May2023 02:09:05.395] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /xp -> experience
+[11May2023 02:09:05.395] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /zc -> zerocore
+[11May2023 02:09:05.395] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /zerocore (debug|recipe)
+[11May2023 02:10:02.973] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Incorrect argument for command
+[11May2023 02:10:02.974] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: /execute mablelaylee ~ ~ ~ /setworldspawn<--[HERE]
+[11May2023 02:11:34.376] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Incorrect argument for command
+[11May2023 02:11:34.376] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: ...blelaylee setworldspawn<--[HERE]
+[11May2023 02:11:51.877] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Incorrect argument for command
+[11May2023 02:11:51.877] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: ...blelaylee /setworldspawn<--[HERE]
+[11May2023 02:13:00.173] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Set the world spawn point to 763, 61, 1711 [0.0]
+[11May2023 02:13:46.376] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [Server] spawn point has been set to near you(i will see if you respond)
+[11May2023 02:13:52.842] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: <mablelaylee> omg yeyy
+[11May2023 02:14:12.051] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: <mablelaylee> I think I might set up a sushi stand for wood lmao
+[11May2023 02:14:19.447] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: <mablelaylee> kelp and fish = logs pls
+[11May2023 02:14:19.622] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [Server] goodnight
+[11May2023 02:14:21.673] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: <mablelaylee> gn!
+[11May2023 02:14:32.375] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Unknown or incomplete command, see below for error
+[11May2023 02:14:32.379] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: yes to trade<--[HERE]
+[11May2023 02:14:44.672] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [Server] yes to trade
+[11May2023 02:15:04.888] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: mablelaylee has made the advancement [Isn't It Iron Pick]
+[11May2023 02:15:34.173] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [Server] gn
+[11May2023 02:16:06.572] [Server thread/WARN] [net.minecraft.server.management.PlayerInteractionManager/]: Mismatch in destroy block pos: BlockPos{x=790, y=60, z=1705} BlockPos{x=777, y=59, z=1718}
+[11May2023 02:16:25.822] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: mablelaylee lost connection: Disconnected
+[11May2023 02:16:25.822] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: mablelaylee left the game
+[11May2023 02:16:31.109] [User Authenticator #2/INFO] [net.minecraft.network.login.ServerLoginNetHandler/]: UUID of player mablelaylee is c744c198-7f17-4856-b9ed-b5b3456f973d
+[11May2023 02:16:34.884] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@154a1fe4
+[11May2023 02:16:34.901] [Server thread/INFO] [net.minecraft.server.management.PlayerList/]: mablelaylee[/47.55.86.141:51845] logged in with entity id 4753 at (775.3298453751019, 61.06753493770271, 1715.5246160902243)
+[11May2023 02:16:34.905] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: mablelaylee joined the game
+[11May2023 02:16:34.938] [Server thread/INFO] [Waila/]: Syncing config to mablelaylee (c744c198-7f17-4856-b9ed-b5b3456f973d)
+[11May2023 02:17:02.816] [Server thread/WARN] [net.minecraft.server.management.PlayerInteractionManager/]: Mismatch in destroy block pos: BlockPos{x=0, y=0, z=0} BlockPos{x=776, y=60, z=1718}
+[11May2023 02:17:49.868] [Server thread/WARN] [net.minecraft.server.management.PlayerInteractionManager/]: Mismatch in destroy block pos: BlockPos{x=0, y=0, z=0} BlockPos{x=775, y=59, z=1718}
+[11May2023 02:18:11.219] [Server thread/WARN] [net.minecraft.server.management.PlayerInteractionManager/]: Mismatch in destroy block pos: BlockPos{x=728, y=57, z=1708} BlockPos{x=758, y=59, z=1712}
+[11May2023 02:18:12.422] [Server thread/WARN] [net.minecraft.server.management.PlayerInteractionManager/]: Mismatch in destroy block pos: BlockPos{x=728, y=57, z=1708} BlockPos{x=755, y=59, z=1712}
+[11May2023 02:20:10.772] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Incorrect argument for command
+[11May2023 02:20:10.772] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: ...blelaylee ~ ~ ~128 run setworldspawn<--[HERE]
+[11May2023 02:21:46.878] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Incomplete (expected 3 coordinates)
+[11May2023 02:21:46.879] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: ...orldspawn 800 1712<--[HERE]
+[11May2023 02:22:29.823] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Set the world spawn point to 800, 70, 1712 [0.0]
+[11May2023 02:37:09.721] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: mablelaylee lost connection: Disconnected
+[11May2023 02:37:09.722] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: mablelaylee left the game
+	

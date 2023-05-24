@@ -1,0 +1,410 @@
+---- Minecraft Crash Report ----
+// Oops.
+
+Time: 10/05/23 22:16
+Description: Watching Server
+
+java.lang.Error: ServerHangWatchdog detected that a single server tick took 60.00 seconds (should be max 0.05)
+	at sun.misc.Unsafe.park(Native Method) ~[?:1.8.0_362] {}
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175) ~[?:1.8.0_362] {}
+	at java.util.concurrent.Phaser$QNode.block(Phaser.java:1140) ~[?:1.8.0_362] {}
+	at java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3323) ~[?:1.8.0_362] {re:computing_frames}
+	at java.util.concurrent.Phaser.internalAwaitAdvance(Phaser.java:1067) ~[?:1.8.0_362] {}
+	at java.util.concurrent.Phaser.arriveAndAwaitAdvance(Phaser.java:690) ~[?:1.8.0_362] {}
+	at org.jmt.mcmt.asmdest.ASMHookTerminator.postTick(ASMHookTerminator.java:317) ~[jmt_mcmt:0.22.87] {re:classloading}
+	at net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.java:864) ~[?:?] {re:mixin,pl:accesstransformer:B,xf:fml:jmt_mcmt:InitialChunkCountBypass,xf:fml:jmt_mcmt:mcserver,xf:fml:jmt_mcmt:ServerExecutionThread,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,xf:fml:jmt_mcmt:InitialChunkCountBypass,xf:fml:jmt_mcmt:mcserver,xf:fml:jmt_mcmt:ServerExecutionThread,pl:runtimedistcleaner:A}
+	at net.minecraft.server.dedicated.DedicatedServer.func_71190_q(DedicatedServer.java:291) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.java:787) ~[?:?] {re:mixin,pl:accesstransformer:B,xf:fml:jmt_mcmt:InitialChunkCountBypass,xf:fml:jmt_mcmt:mcserver,xf:fml:jmt_mcmt:ServerExecutionThread,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,xf:fml:jmt_mcmt:InitialChunkCountBypass,xf:fml:jmt_mcmt:mcserver,xf:fml:jmt_mcmt:ServerExecutionThread,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.func_240802_v_(MinecraftServer.java:642) ~[?:?] {re:mixin,pl:accesstransformer:B,xf:fml:jmt_mcmt:InitialChunkCountBypass,xf:fml:jmt_mcmt:mcserver,xf:fml:jmt_mcmt:ServerExecutionThread,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,xf:fml:jmt_mcmt:InitialChunkCountBypass,xf:fml:jmt_mcmt:mcserver,xf:fml:jmt_mcmt:ServerExecutionThread,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.func_240783_a_(MinecraftServer.java:232) ~[?:?] {re:mixin,pl:accesstransformer:B,xf:fml:jmt_mcmt:InitialChunkCountBypass,xf:fml:jmt_mcmt:mcserver,xf:fml:jmt_mcmt:ServerExecutionThread,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,xf:fml:jmt_mcmt:InitialChunkCountBypass,xf:fml:jmt_mcmt:mcserver,xf:fml:jmt_mcmt:ServerExecutionThread,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer$$Lambda$11493/1424131074.run(Unknown Source) ~[?:?] {}
+	at java.lang.Thread.run(Thread.java:750) [?:1.8.0_362] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server Watchdog
+Stacktrace:
+	at sun.misc.Unsafe.park(Native Method) ~[?:1.8.0_362] {}
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175) ~[?:1.8.0_362] {}
+	at java.util.concurrent.Phaser$QNode.block(Phaser.java:1140) ~[?:1.8.0_362] {}
+	at java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3323) ~[?:1.8.0_362] {re:computing_frames}
+	at java.util.concurrent.Phaser.internalAwaitAdvance(Phaser.java:1067) ~[?:1.8.0_362] {}
+	at java.util.concurrent.Phaser.arriveAndAwaitAdvance(Phaser.java:690) ~[?:1.8.0_362] {}
+	at org.jmt.mcmt.asmdest.ASMHookTerminator.postTick(ASMHookTerminator.java:317) ~[jmt_mcmt:0.22.87] {re:classloading}
+	at net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.java:864) ~[?:?] {re:mixin,pl:accesstransformer:B,xf:fml:jmt_mcmt:InitialChunkCountBypass,xf:fml:jmt_mcmt:mcserver,xf:fml:jmt_mcmt:ServerExecutionThread,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,xf:fml:jmt_mcmt:InitialChunkCountBypass,xf:fml:jmt_mcmt:mcserver,xf:fml:jmt_mcmt:ServerExecutionThread,pl:runtimedistcleaner:A}
+	at net.minecraft.server.dedicated.DedicatedServer.func_71190_q(DedicatedServer.java:291) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.java:787) ~[?:?] {re:mixin,pl:accesstransformer:B,xf:fml:jmt_mcmt:InitialChunkCountBypass,xf:fml:jmt_mcmt:mcserver,xf:fml:jmt_mcmt:ServerExecutionThread,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,xf:fml:jmt_mcmt:InitialChunkCountBypass,xf:fml:jmt_mcmt:mcserver,xf:fml:jmt_mcmt:ServerExecutionThread,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.func_240802_v_(MinecraftServer.java:642) ~[?:?] {re:mixin,pl:accesstransformer:B,xf:fml:jmt_mcmt:InitialChunkCountBypass,xf:fml:jmt_mcmt:mcserver,xf:fml:jmt_mcmt:ServerExecutionThread,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,xf:fml:jmt_mcmt:InitialChunkCountBypass,xf:fml:jmt_mcmt:mcserver,xf:fml:jmt_mcmt:ServerExecutionThread,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.func_240783_a_(MinecraftServer.java:232) ~[?:?] {re:mixin,pl:accesstransformer:B,xf:fml:jmt_mcmt:InitialChunkCountBypass,xf:fml:jmt_mcmt:mcserver,xf:fml:jmt_mcmt:ServerExecutionThread,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,xf:fml:jmt_mcmt:InitialChunkCountBypass,xf:fml:jmt_mcmt:mcserver,xf:fml:jmt_mcmt:ServerExecutionThread,pl:runtimedistcleaner:A}
+-- Thread Dump --
+Details:
+	Threads: "Netty Epoll Server IO #2" Id=91 RUNNABLE (in native)
+	at io.netty.channel.epoll.Native.epollWait0(Native Method)
+	at io.netty.channel.epoll.Native.epollWait(Native.java:114)
+	at io.netty.channel.epoll.EpollEventLoop.epollWait(EpollEventLoop.java:239)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:256)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884)
+	at java.lang.Thread.run(Thread.java:750)
+
+
+"Netty Epoll Server IO #1" Id=87 RUNNABLE (in native)
+	at io.netty.channel.epoll.Native.epollWait0(Native Method)
+	at io.netty.channel.epoll.Native.epollWait(Native.java:114)
+	at io.netty.channel.epoll.EpollEventLoop.epollWait(EpollEventLoop.java:239)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:256)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884)
+	at java.lang.Thread.run(Thread.java:750)
+
+
+"MCMT-Pool-Thread-3" Id=86 WAITING on java.util.concurrent.ForkJoinPool@250b686e
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@250b686e
+	at java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1824)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1693)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175)
+
+
+"MCMT-Pool-Thread-2" Id=85 RUNNABLE
+	at java.util.WeakHashMap.put(WeakHashMap.java:453)
+	at java.util.Collections$SetFromMap.add(Collections.java:5515)
+	at net.minecraft.item.crafting.Ingredient.<init>(Ingredient.java:48)
+	at net.minecraft.item.crafting.Ingredient.func_209357_a(Ingredient.java:153)
+	at net.minecraft.item.crafting.Ingredient.func_199805_a(Ingredient.java:174)
+	at net.minecraft.entity.passive.BeeEntity.func_184651_r(BeeEntity.java:135)
+	at net.minecraft.entity.MobEntity.<init>(MobEntity.java:120)
+	at net.minecraft.entity.CreatureEntity.<init>(SourceFile:12)
+	...
+
+
+"MCMT-Pool-Thread-1" Id=84 RUNNABLE
+	at java.util.WeakHashMap.put(WeakHashMap.java:453)
+	at java.util.Collections$SetFromMap.add(Collections.java:5515)
+	at net.minecraft.item.crafting.Ingredient.<init>(Ingredient.java:48)
+	at net.minecraft.item.crafting.Ingredient.func_209357_a(Ingredient.java:153)
+	at net.minecraft.item.crafting.Ingredient.func_199805_a(Ingredient.java:174)
+	at net.minecraft.entity.passive.BeeEntity.func_184651_r(BeeEntity.java:135)
+	at net.minecraft.entity.MobEntity.<init>(MobEntity.java:120)
+	at net.minecraft.entity.CreatureEntity.<init>(SourceFile:12)
+	...
+
+
+"MCMT-Pool-Thread-0" Id=83 WAITING on java.util.concurrent.ForkJoinPool@250b686e
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@250b686e
+	at java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1824)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1693)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175)
+
+
+"Thread-22" Id=82 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.performant.coremod.entity.threading.ActionThread.run(ActionThread.java:44)
+
+
+"Thread-21" Id=81 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.performant.coremod.entity.threading.MoveThread.run(MoveThread.java:51)
+
+
+"Thread-20" Id=80 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.performant.coremod.entity.threading.MoveThread.run(MoveThread.java:51)
+
+
+"Thread-19" Id=79 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.performant.coremod.entity.threading.MoveThread.run(MoveThread.java:51)
+
+
+"Thread-18" Id=78 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.performant.coremod.entity.threading.MoveThread.run(MoveThread.java:51)
+
+
+"Server Watchdog" Id=77 RUNNABLE
+	at sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:496)
+	at sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:484)
+	at net.minecraft.server.dedicated.ServerHangWatchdog.run(ServerHangWatchdog.java:41)
+	at java.lang.Thread.run(Thread.java:750)
+
+
+"Chunk Cache Cleaner the_other" Id=76 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at org.jmt.mcmt.paralelised.ParaServerChunkProvider.chunkCacheCleanup(ParaServerChunkProvider.java:198)
+	at org.jmt.mcmt.paralelised.ParaServerChunkProvider$$Lambda$11746/1379318403.run(Unknown Source)
+	at java.lang.Thread.run(Thread.java:750)
+
+
+"Chunk Cache Cleaner mining" Id=75 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at org.jmt.mcmt.paralelised.ParaServerChunkProvider.chunkCacheCleanup(ParaServerChunkProvider.java:198)
+	at org.jmt.mcmt.paralelised.ParaServerChunkProvider$$Lambda$11746/1379318403.run(Unknown Source)
+	at java.lang.Thread.run(Thread.java:750)
+
+
+"Chunk Cache Cleaner the_end" Id=74 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at org.jmt.mcmt.paralelised.ParaServerChunkProvider.chunkCacheCleanup(ParaServerChunkProvider.java:198)
+	at org.jmt.mcmt.paralelised.ParaServerChunkProvider$$Lambda$11746/1379318403.run(Unknown Source)
+	at java.lang.Thread.run(Thread.java:750)
+
+
+"Chunk Cache Cleaner the_nether" Id=73 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at org.jmt.mcmt.paralelised.ParaServerChunkProvider.chunkCacheCleanup(ParaServerChunkProvider.java:198)
+	at org.jmt.mcmt.paralelised.ParaServerChunkProvider$$Lambda$11746/1379318403.run(Unknown Source)
+	at java.lang.Thread.run(Thread.java:750)
+
+
+"ChunkLoaderWorker-0" Id=69 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@2bcc92bf
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@2bcc92bf
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+
+"Chunk Cache Cleaner overworld" Id=67 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at org.jmt.mcmt.paralelised.ParaServerChunkProvider.chunkCacheCleanup(ParaServerChunkProvider.java:198)
+	at org.jmt.mcmt.paralelised.ParaServerChunkProvider$$Lambda$11746/1379318403.run(Unknown Source)
+	at java.lang.Thread.run(Thread.java:750)
+
+
+"Thread-13" Id=66 RUNNABLE (in native)
+	at sun.nio.fs.LinuxWatchService.poll(Native Method)
+	at sun.nio.fs.LinuxWatchService.access$600(LinuxWatchService.java:47)
+	at sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:314)
+	at java.lang.Thread.run(Thread.java:750)
+
+
+"Netty Epoll Server IO #0" Id=65 RUNNABLE (in native)
+	at io.netty.channel.epoll.Native.epollWait0(Native Method)
+	at io.netty.channel.epoll.Native.epollWait(Native.java:114)
+	at io.netty.channel.epoll.EpollEventLoop.epollWait(EpollEventLoop.java:239)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:256)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884)
+	at java.lang.Thread.run(Thread.java:750)
+
+
+"ObjectCleanerThread" Id=64 TIMED_WAITING on java.lang.ref.ReferenceQueue$Lock@2ff3031e
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@2ff3031e
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+	at io.netty.util.internal.ObjectCleaner$1.run(ObjectCleaner.java:54)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+
+
+"Server console handler" Id=62 RUNNABLE
+	at java.io.FileInputStream.read0(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:207)
+	at org.jline.terminal.impl.AbstractPty$PtyInputStream.read(AbstractPty.java:73)
+	at org.jline.utils.NonBlockingInputStream.read(NonBlockingInputStream.java:62)
+	at org.jline.utils.NonBlocking$NonBlockingInputStreamReader.read(NonBlocking.java:168)
+	at org.jline.utils.NonBlockingReader.read(NonBlockingReader.java:57)
+	at org.jline.keymap.BindingReader.readCharacter(BindingReader.java:133)
+	at org.jline.keymap.BindingReader.readBinding(BindingReader.java:110)
+	...
+
+
+"DestroyJavaVM" Id=63 RUNNABLE
+
+
+"Server thread" Id=59 WAITING on java.util.concurrent.Phaser$QNode@6af19884
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.Phaser$QNode@6af19884
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.Phaser$QNode.block(Phaser.java:1140)
+	at java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3323)
+	at java.util.concurrent.Phaser.internalAwaitAdvance(Phaser.java:1067)
+	at java.util.concurrent.Phaser.arriveAndAwaitAdvance(Phaser.java:690)
+	at org.jmt.mcmt.asmdest.ASMHookTerminator.postTick(ASMHookTerminator.java:317)
+	at net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.java:864)
+	...
+
+
+"Snooper Timer" Id=60 WAITING on java.util.TaskQueue@14c7d5ac
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@14c7d5ac
+	at java.lang.Object.wait(Object.java:502)
+	at java.util.TimerThread.mainLoop(Timer.java:526)
+	at java.util.TimerThread.run(Timer.java:505)
+
+
+"Keep-Alive-SocketCleaner" Id=55 WAITING on sun.net.www.http.KeepAliveStreamCleaner@5b51f4e1
+	at java.lang.Object.wait(Native Method)
+	-  waiting on sun.net.www.http.KeepAliveStreamCleaner@5b51f4e1
+	at sun.net.www.http.KeepAliveStreamCleaner.run(KeepAliveStreamCleaner.java:101)
+	at java.lang.Thread.run(Thread.java:750)
+
+
+"Thread-8" Id=38 RUNNABLE (in native)
+	at sun.nio.fs.LinuxWatchService.poll(Native Method)
+	at sun.nio.fs.LinuxWatchService.access$600(LinuxWatchService.java:47)
+	at sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:314)
+	at java.lang.Thread.run(Thread.java:750)
+
+
+"Thread-7" Id=34 RUNNABLE (in native)
+	at sun.nio.fs.LinuxWatchService.poll(Native Method)
+	at sun.nio.fs.LinuxWatchService.access$600(LinuxWatchService.java:47)
+	at sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:314)
+	at java.lang.Thread.run(Thread.java:750)
+
+
+"MCMT Stats Thread" Id=28 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at org.jmt.mcmt.commands.StatsCommand.lambda$runDataThread$8(StatsCommand.java:123)
+	at org.jmt.mcmt.commands.StatsCommand$$Lambda$3062/75280389.run(Unknown Source)
+	at java.lang.Thread.run(Thread.java:750)
+
+
+"Timer hack thread" Id=23 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at net.minecraft.util.Util$6.run(Util.java:505)
+
+
+"Thread-2" Id=18 RUNNABLE (in native)
+	at sun.nio.fs.LinuxWatchService.poll(Native Method)
+	at sun.nio.fs.LinuxWatchService.access$600(LinuxWatchService.java:47)
+	at sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:314)
+	at java.lang.Thread.run(Thread.java:750)
+
+
+"Thread-1" Id=17 TIMED_WAITING
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:338)
+	at com.electronwill.nightconfig.core.file.FileWatcher$WatcherThread.run(FileWatcher.java:190)
+
+
+"Signal Dispatcher" Id=4 RUNNABLE
+
+
+"Finalizer" Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@6c8de766
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@6c8de766
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:188)
+
+
+"Reference Handler" Id=2 WAITING on java.lang.ref.Reference$Lock@ade67cb
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.Reference$Lock@ade67cb
+	at java.lang.Object.wait(Object.java:502)
+	at java.lang.ref.Reference.tryHandlePending(Reference.java:191)
+	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:153)
+
+
+
+Stacktrace:
+	at net.minecraft.server.dedicated.ServerHangWatchdog.run(ServerHangWatchdog.java:56) [?:?] {re:classloading}
+	at java.lang.Thread.run(Thread.java:750) [?:1.8.0_362] {}
+
+
+-- Performance stats --
+Details:
+	Random tick rate: 3
+	Level stats: ResourceKey[minecraft:dimension / minecraft:overworld]: players: 1, entities: 109 [minecraft:cow:26,minecraft:wolf:20,minecraft:chicken:18,minecraft:chest_minecart:13,minecraft:sheep:10], block_entities: 13 [minecraft:beehive:5,minecraft:mob_spawner:4,minecraft:chest:4], block_ticks: 17492, fluid_ticks: 2314, chunk_source: ServerChunkCache: 2070,
+ResourceKey[minecraft:dimension / minecraft:the_nether]: players: 0, entities: 0 [], block_entities: 0 [], block_ticks: 0, fluid_ticks: 0, chunk_source: ServerChunkCache: 0,
+ResourceKey[minecraft:dimension / minecraft:the_end]: players: 0, entities: 0 [], block_entities: 0 [], block_ticks: 0, fluid_ticks: 0, chunk_source: ServerChunkCache: 0,
+ResourceKey[minecraft:dimension / allthemodium:mining]: players: 0, entities: 0 [], block_entities: 0 [], block_ticks: 0, fluid_ticks: 0, chunk_source: ServerChunkCache: 0,
+ResourceKey[minecraft:dimension / allthemodium:the_other]: players: 0, entities: 0 [], block_entities: 0 [], block_ticks: 0, fluid_ticks: 0, chunk_source: ServerChunkCache: 0
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.5
+	Minecraft Version ID: 1.16.5
+	Operating System: Linux (amd64) version 5.15.0-71-generic
+	Java Version: 1.8.0_362, Private Build
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Private Build
+	Memory: 3811222712 bytes (3634 MB) / 5313134592 bytes (5067 MB) up to 5592580096 bytes (5333 MB)
+	CPUs: 4
+	JVM Flags: 2 total; -Xmx6000M -Xms3000M
+	MCMT: 
+		Config Info:
+			- Disabled: false
+			- World Disabled: false(onPostTick Disabled: false)
+			- Entity Disabled: false
+			- Env Disabled: false
+			- TE Disabled: false
+			- SCP Disabled: false
+
+	ModLauncher: 8.1.3+8.1.3+main-8.1.x.c94d18ec
+	ModLauncher launch target: fmlserver
+	ModLauncher naming: srg
+	ModLauncher services: 
+		/mixin-0.8.4.jar mixin PLUGINSERVICE 
+		/eventbus-4.0.0.jar eventbus PLUGINSERVICE 
+		/forge-1.16.5-36.2.39.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.16.5-36.2.39.jar runtime_enum_extender PLUGINSERVICE 
+		/accesstransformers-3.0.1.jar accesstransformer PLUGINSERVICE 
+		/forge-1.16.5-36.2.39.jar capability_inject_definalize PLUGINSERVICE 
+		/forge-1.16.5-36.2.39.jar runtimedistcleaner PLUGINSERVICE 
+		/jmt_mcmt-1.16.5-0.22.87.jar sync_fu TRANSFORMATIONSERVICE 
+		/mixin-0.8.4.jar mixin TRANSFORMATIONSERVICE 
+		/forge-1.16.5-36.2.39.jar fml TRANSFORMATIONSERVICE 
+	FML: 36.2
+	Forge: net.minecraftforge:36.2.39
+	FML Language Providers: 
+		javafml@36.2
+		minecraft@1
+	Mod List: 
+		forge-1.16.5-36.2.39-server.jar                   |Minecraft                     |minecraft                     |1.16.5              |DONE      |Manifest: NOSIGNATURE
+		TConstruct-1.16.5-3.3.4.335.jar                   |Tinkers' Construct            |tconstruct                    |3.3.4.335           |DONE      |Manifest: NOSIGNATURE
+		theoneprobe-1.16-3.1.4.jar                        |The One Probe                 |theoneprobe                   |1.16-3.1.4          |DONE      |Manifest: NOSIGNATURE
+		jmt_mcmt-1.16.5-0.22.87-modcore.jar               |JMT MCMT                      |jmt_mcmt                      |0.22.87             |DONE      |Manifest: NOSIGNATURE
+		BiomesOPlenty-1.16.5-13.1.0.488-universal.jar     |Biomes O' Plenty              |biomesoplenty                 |1.16.5-13.1.0.488   |DONE      |Manifest: NOSIGNATURE
+		Jade-1.16.4-2.8.3.jar                             |Jade                          |jade                          |2.8.3               |DONE      |Manifest: NOSIGNATURE
+		ironfurnaces-1.16.5-2.7.7.jar                     |Iron Furnaces                 |ironfurnaces                  |2.7.7               |DONE      |Manifest: NOSIGNATURE
+		allthemodium-1.5.18-1.16.5-36.1.23.jar            |Allthemodium                  |allthemodium                  |1.5.18-1.16.5-36.1.2|DONE      |Manifest: NOSIGNATURE
+		refinedpipes-0.5.2.jar                            |Refined Pipes                 |refinedpipes                  |0.5.2               |DONE      |Manifest: NOSIGNATURE
+		jei-1.16.5-7.7.1.150.jar                          |Just Enough Items             |jei                           |7.7.1.150           |DONE      |Manifest: NOSIGNATURE
+		simplybackpacks-1.16.5-2.1.1-build.39.jar         |Simply Backpacks              |simplybackpacks               |1.16.5-2.1.1-build.3|DONE      |Manifest: NOSIGNATURE
+		caelus-forge-1.16.5-2.1.3.2.jar                   |Caelus API                    |caelus                        |1.16.5-2.1.3.2      |DONE      |Manifest: NOSIGNATURE
+		easy_villagers-1.16.5-1.0.13.jar                  |Easy Villagers                |easy_villagers                |1.16.5-1.0.13       |DONE      |Manifest: NOSIGNATURE
+		rubidium-0.2.10.jar                               |Rubidium                      |rubidium                      |0.2.10              |DONE      |Manifest: NOSIGNATURE
+		flywheel-1.16-0.2.5.jar                           |Flywheel                      |flywheel                      |1.16-0.2.5          |DONE      |Manifest: NOSIGNATURE
+		Patchouli-1.16.4-53.3.jar                         |Patchouli                     |patchouli                     |1.16.4-53.3         |DONE      |Manifest: NOSIGNATURE
+		Origins-1.16.5-0.7.3.9-forge.jar                  |Origins                       |origins                       |0.7.3.9             |DONE      |Manifest: NOSIGNATURE
+		Mantle-1.16.5-1.6.157.jar                         |Mantle                        |mantle                        |1.6.157             |DONE      |Manifest: NOSIGNATURE
+		create-mc1.16.5_v0.3.2g.jar                       |Create                        |create                        |v0.3.2g             |DONE      |Manifest: NOSIGNATURE
+		Waystones_1.16.5-7.6.4.jar                        |Waystones                     |waystones                     |7.6.4               |DONE      |Manifest: NOSIGNATURE
+		journeymap-1.16.5-5.8.5p6.jar                     |Journeymap                    |journeymap                    |5.8.5p6             |DONE      |Manifest: NOSIGNATURE
+		CookingForBlockheads_1.16.5-9.3.4.jar             |Cooking for Blockheads        |cookingforblockheads          |9.3.4               |DONE      |Manifest: NOSIGNATURE
+		StorageDrawers-1.16.3-8.5.1.jar                   |Storage Drawers               |storagedrawers                |8.5.1               |DONE      |Manifest: NOSIGNATURE
+		OreExcavation-1.8.157.jar                         |Ore Excavation                |oreexcavation                 |1.8.157             |DONE      |Manifest: NOSIGNATURE
+		NaturesCompass-1.16.5-1.9.1-forge.jar             |Nature's Compass              |naturescompass                |1.16.5-1.9.1-forge  |DONE      |Manifest: NOSIGNATURE
+		performant-1.16.2-5-3.99m.jar                     |Performant                    |performant                    |3.73m               |DONE      |Manifest: NOSIGNATURE
+		configured-1.5.4-1.16.5.jar                       |Configured                    |configured                    |1.5.4               |DONE      |Manifest: NOSIGNATURE
+		ftb-ultimine-forge-1605.3.1-build.45.jar          |FTB Ultimine                  |ftbultimine                   |1605.3.1-build.45   |DONE      |Manifest: NOSIGNATURE
+		pneumaticcraft-repressurized-1.16.5-2.15.11-334.ja|PneumaticCraft: Repressurized |pneumaticcraft                |1.16.5-2.15.11-334  |DONE      |Manifest: NOSIGNATURE
+		randompatches-2.4.4-forge.jar                     |RandomPatches                 |randompatches                 |2.4.4-forge         |DONE      |Manifest: 92:f6:29:d4:09:89:f5:f5:98:5e:20:34:31:d0:7b:58:22:06:bd:a5:d1:6a:92:6e:ac:3d:8d:18:c5:b2:5b:d7
+		architectury-1.32.66.jar                          |Architectury                  |architectury                  |1.32.66             |DONE      |Manifest: NOSIGNATURE
+		ftb-library-forge-1605.3.4-build.90.jar           |FTB Library                   |ftblibrary                    |1605.3.4-build.90   |DONE      |Manifest: NOSIGNATURE
+		ferritecore-2.1.0-forge.jar                       |Ferrite Core                  |ferritecore                   |2.1.0               |DONE      |Manifest: 41:ce:50:66:d1:a0:05:ce:a1:0e:02:85:9b:46:64:e0:bf:2e:cf:60:30:9a:fe:0c:27:e0:63:66:9a:84:ce:8a
+		catalogue-1.6.1-1.16.5.jar                        |Catalogue                     |catalogue                     |1.6.1               |DONE      |Manifest: NOSIGNATURE
+		cloth-config-4.16.91-forge.jar                    |Cloth Config v4 API           |cloth-config                  |4.16.91             |DONE      |Manifest: NOSIGNATURE
+		JustEnoughResources-1.16.5-0.12.1.128.jar         |Just Enough Resources         |jeresources                   |0.12.1.128          |DONE      |Manifest: NOSIGNATURE
+		ImmersivePetroleum-1.16.5-3.4.0-13.jar            |Immersive Petroleum           |immersivepetroleum            |3.4.0-13            |DONE      |Manifest: NOSIGNATURE
+		ImmersiveEngineering-1.16.5-5.1.0-148.jar         |Immersive Engineering         |immersiveengineering          |1.16.5-5.1.0-148    |DONE      |Manifest: NOSIGNATURE
+		forge-1.16.5-36.2.39-universal.jar                |Forge                         |forge                         |36.2.39             |DONE      |Manifest: 22:af:21:d8:19:82:7f:93:94:fe:2b:ac:b7:e4:41:57:68:39:87:b1:a7:5c:c6:44:f9:25:74:21:14:f5:0d:90
+		refinedstorage-1.9.17.jar                         |Refined Storage               |refinedstorage                |1.9.17              |DONE      |Manifest: NOSIGNATURE
+		refinedstorageaddons-0.7.4.jar                    |Refined Storage Addons        |refinedstorageaddons          |0.7.4               |DONE      |Manifest: NOSIGNATURE
+		createaddition-1.16.5-20220129a.jar               |Create Crafts & Additions     |createaddition                |1.16.5-20220129a    |DONE      |Manifest: NOSIGNATURE
+		ZeroCore2-1.16.5-2.1.30.jar                       |Zero CORE 2                   |zerocore                      |1.16.5-2.1.30       |DONE      |Manifest: NOSIGNATURE
+		ExtremeReactors2-1.16.5-2.0.60.jar                |Extreme Reactors              |bigreactors                   |1.16.5-2.0.60       |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: 830f4e04-4de8-4cea-bb60-52bc5ff12002
+	Player Count: 1 / 20; [ServerPlayerEntity['Feyrowan'/1326, l='ServerLevel[world]', x=245.50, y=71.00, z=139.50]]
+	Data Packs: vanilla, mod:tconstruct, mod:theoneprobe, mod:jmt_mcmt (incompatible), mod:biomesoplenty, mod:jade, mod:ironfurnaces, mod:allthemodium, mod:refinedpipes, mod:jei, mod:simplybackpacks (incompatible), mod:caelus, mod:easy_villagers, mod:rubidium (incompatible), mod:flywheel, mod:patchouli (incompatible), mod:origins, mod:mantle (incompatible), mod:create, mod:waystones (incompatible), mod:journeymap (incompatible), mod:cookingforblockheads (incompatible), mod:storagedrawers (incompatible), mod:oreexcavation, mod:naturescompass (incompatible), mod:performant (incompatible), mod:configured, mod:ftbultimine (incompatible), mod:pneumaticcraft, mod:randompatches, mod:architectury, mod:ftblibrary, mod:ferritecore (incompatible), mod:catalogue, mod:cloth-config (incompatible), mod:jeresources, mod:immersivepetroleum, mod:immersiveengineering, mod:forge, mod:refinedstorage, mod:refinedstorageaddons, mod:createaddition, mod:zerocore, mod:bigreactors
+	Is Modded: Definitely; Server brand changed to 'forge'
+	Type: Dedicated Server (map_server.txt)
