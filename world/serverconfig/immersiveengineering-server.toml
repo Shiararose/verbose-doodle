@@ -204,12 +204,6 @@
 		#A modifier to apply to the cloches total growing speed
 		#Range: 0.001 ~ 1000.0
 		growth_modifier = 1.0
-		#A base-modifier for all solid fertilizers in the cloche
-		#Range: 0.001 ~ 1000.0
-		solid_fertilizer_mod = 1.0
-		#A base-modifier for all fluid fertilizers in the cloche
-		#Range: 0.001 ~ 1000.0
-		fluid_fertilizer_mod = 1.0
 
 	[machines.lantern]
 		#Set this to false to disable the mob-spawn prevention of the Powered Lantern
@@ -338,8 +332,6 @@
 		#The maximum depletion a vein can start with, as a decimal value. When a vein generates, a random percentage up to this value is depleted from it
 		#Range: 0.0 ~ 1.0
 		initial_depletion = 0.2
-		#List of dimensions that can't contain minerals. Default: The End.
-		dimBlacklist = ["minecraft:the_end"]
 
 [ores]
 	#The retrogeneration key. Basically IE checks if this key is saved in the chunks data. If it isn't, it will perform retrogen on all ores marked for retrogen.
@@ -350,105 +342,141 @@
 	#Set this to false to disable the logging of the chunks that are still left to retrogen.
 	retrogen_log_remaining = true
 
-	#Ore generation config - copper
-	[ores.copper]
-		#The maximum size of a vein. Set to 0 to disable generation
-		#Range: > 0
-		vein_size = 8
-		#The minimum Y coordinate this ore can spawn at
-		#Range: > -2147483648
-		min_y = 40
-		#The maximum Y coordinate this ore can spawn at
-		#Range: > -2147483648
-		max_y = 72
-		#The average number of veins per chunk
-		#Range: > 0
-		avg_veins_per_chunk = 8
-		#Set this to true to allow retro-generation of copper Ore.
-		retrogen_enable = false
-
 	#Ore generation config - bauxite
 	[ores.bauxite]
+		#The distribution shape. UNIFORM is evenly distributed across the height range, TRAPEZOID favors the middle of the range.
+		#Allowed Values: UNIFORM, TRAPEZOID
+		distribution = "TRAPEZOID"
+		#Chance for ores to not generate, if they are exposed to air. 0 means ignoring air exposure, 1 requires being burried.
+		#Range: 0.0 ~ 1.0
+		air_exposure = 0.0
 		#The maximum size of a vein. Set to 0 to disable generation
 		#Range: > 0
-		vein_size = 4
+		vein_size = 6
 		#The minimum Y coordinate this ore can spawn at
 		#Range: > -2147483648
-		min_y = 40
+		min_y = 32
 		#The maximum Y coordinate this ore can spawn at
 		#Range: > -2147483648
-		max_y = 85
-		#The average number of veins per chunk
+		max_y = 112
+		#The number of veins attempted to be generated per chunk
 		#Range: > 0
-		avg_veins_per_chunk = 8
+		attempts_per_chunk = 16
 		#Set this to true to allow retro-generation of bauxite Ore.
 		retrogen_enable = false
 
 	#Ore generation config - lead
 	[ores.lead]
-		#The maximum size of a vein. Set to 0 to disable generation
-		#Range: > 0
-		vein_size = 6
-		#The minimum Y coordinate this ore can spawn at
-		#Range: > -2147483648
-		min_y = 8
-		#The maximum Y coordinate this ore can spawn at
-		#Range: > -2147483648
-		max_y = 36
-		#The average number of veins per chunk
-		#Range: > 0
-		avg_veins_per_chunk = 4
-		#Set this to true to allow retro-generation of lead Ore.
-		retrogen_enable = false
-
-	#Ore generation config - silver
-	[ores.silver]
+		#The distribution shape. UNIFORM is evenly distributed across the height range, TRAPEZOID favors the middle of the range.
+		#Allowed Values: UNIFORM, TRAPEZOID
+		distribution = "TRAPEZOID"
+		#Chance for ores to not generate, if they are exposed to air. 0 means ignoring air exposure, 1 requires being burried.
+		#Range: 0.0 ~ 1.0
+		air_exposure = 0.0
 		#The maximum size of a vein. Set to 0 to disable generation
 		#Range: > 0
 		vein_size = 8
 		#The minimum Y coordinate this ore can spawn at
 		#Range: > -2147483648
-		min_y = 8
+		min_y = -32
 		#The maximum Y coordinate this ore can spawn at
 		#Range: > -2147483648
-		max_y = 40
-		#The average number of veins per chunk
+		max_y = 80
+		#The number of veins attempted to be generated per chunk
 		#Range: > 0
-		avg_veins_per_chunk = 4
+		attempts_per_chunk = 12
+		#Set this to true to allow retro-generation of lead Ore.
+		retrogen_enable = false
+
+	#Ore generation config - silver
+	[ores.silver]
+		#The distribution shape. UNIFORM is evenly distributed across the height range, TRAPEZOID favors the middle of the range.
+		#Allowed Values: UNIFORM, TRAPEZOID
+		distribution = "TRAPEZOID"
+		#Chance for ores to not generate, if they are exposed to air. 0 means ignoring air exposure, 1 requires being burried.
+		#Range: 0.0 ~ 1.0
+		air_exposure = 0.25
+		#The maximum size of a vein. Set to 0 to disable generation
+		#Range: > 0
+		vein_size = 9
+		#The minimum Y coordinate this ore can spawn at
+		#Range: > -2147483648
+		min_y = -48
+		#The maximum Y coordinate this ore can spawn at
+		#Range: > -2147483648
+		max_y = 32
+		#The number of veins attempted to be generated per chunk
+		#Range: > 0
+		attempts_per_chunk = 10
 		#Set this to true to allow retro-generation of silver Ore.
 		retrogen_enable = false
 
 	#Ore generation config - nickel
 	[ores.nickel]
+		#The distribution shape. UNIFORM is evenly distributed across the height range, TRAPEZOID favors the middle of the range.
+		#Allowed Values: UNIFORM, TRAPEZOID
+		distribution = "UNIFORM"
+		#Chance for ores to not generate, if they are exposed to air. 0 means ignoring air exposure, 1 requires being burried.
+		#Range: 0.0 ~ 1.0
+		air_exposure = 0.0
+		#The maximum size of a vein. Set to 0 to disable generation
+		#Range: > 0
+		vein_size = 5
+		#The minimum Y coordinate this ore can spawn at
+		#Range: > -2147483648
+		min_y = -64
+		#The maximum Y coordinate this ore can spawn at
+		#Range: > -2147483648
+		max_y = 24
+		#The number of veins attempted to be generated per chunk
+		#Range: > 0
+		attempts_per_chunk = 7
+		#Set this to true to allow retro-generation of nickel Ore.
+		retrogen_enable = false
+
+	#Ore generation config - deep_nickel
+	[ores.deep_nickel]
+		#The distribution shape. UNIFORM is evenly distributed across the height range, TRAPEZOID favors the middle of the range.
+		#Allowed Values: UNIFORM, TRAPEZOID
+		distribution = "TRAPEZOID"
+		#Chance for ores to not generate, if they are exposed to air. 0 means ignoring air exposure, 1 requires being burried.
+		#Range: 0.0 ~ 1.0
+		air_exposure = 0.0
 		#The maximum size of a vein. Set to 0 to disable generation
 		#Range: > 0
 		vein_size = 6
 		#The minimum Y coordinate this ore can spawn at
 		#Range: > -2147483648
-		min_y = 8
+		min_y = -120
 		#The maximum Y coordinate this ore can spawn at
 		#Range: > -2147483648
-		max_y = 24
-		#The average number of veins per chunk
+		max_y = -8
+		#The number of veins attempted to be generated per chunk
 		#Range: > 0
-		avg_veins_per_chunk = 2
-		#Set this to true to allow retro-generation of nickel Ore.
+		attempts_per_chunk = 11
+		#Set this to true to allow retro-generation of deep_nickel Ore.
 		retrogen_enable = false
 
 	#Ore generation config - uranium
 	[ores.uranium]
+		#The distribution shape. UNIFORM is evenly distributed across the height range, TRAPEZOID favors the middle of the range.
+		#Allowed Values: UNIFORM, TRAPEZOID
+		distribution = "TRAPEZOID"
+		#Chance for ores to not generate, if they are exposed to air. 0 means ignoring air exposure, 1 requires being burried.
+		#Range: 0.0 ~ 1.0
+		air_exposure = 0.5
 		#The maximum size of a vein. Set to 0 to disable generation
 		#Range: > 0
 		vein_size = 4
 		#The minimum Y coordinate this ore can spawn at
 		#Range: > -2147483648
-		min_y = 8
+		min_y = -64
 		#The maximum Y coordinate this ore can spawn at
 		#Range: > -2147483648
-		max_y = 24
-		#The average number of veins per chunk
+		max_y = -16
+		#The number of veins attempted to be generated per chunk
 		#Range: > 0
-		avg_veins_per_chunk = 2
+		attempts_per_chunk = 9
 		#Set this to true to allow retro-generation of uranium Ore.
 		retrogen_enable = false
 
@@ -503,18 +531,4 @@
 		#A modifier for the damage of all projectiles fired by the Railgun
 		#Range: 0.0 ~ 1.7976931348623157E308
 		damage_modifier = 1.0
-
-	[tools.powerpack]
-		#A whitelist of armor pieces to allow attaching the capacitor backpack, formatting: [mod id]:[item name]
-		whitelist = []
-		#A blacklist of armor pieces to allow attaching the capacitor backpack, formatting: [mod id]:[item name]. Whitelist has priority over this
-		blacklist = ["embers:ashen_cloak_chest", "ic2:batpack", "ic2:cf_pack", "ic2:energy_pack", "ic2:jetpack", "ic2:jetpack_electric", "ic2:lappack"]
-
-	[tools.toolbox]
-		#A whitelist of tools allowed in the toolbox, formatting: [mod id]:[item name]
-		tools = []
-		#A whitelist of foods allowed in the toolbox, formatting: [mod id]:[item name]
-		foods = []
-		#A whitelist of wire-related allowed in the toolbox, formatting: [mod id]:[item name]
-		wiring = []
 
